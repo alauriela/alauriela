@@ -26,7 +26,7 @@
 
 | Proyecto | Descripción Visual | Recursos |
 | :--- | :--- | :--- |
-| **Patrocinio MWC** | Diseño de paquetes de inversión y análisis de público. | [📄 PDF](./propuesta_de_patrocinio–mobile_world_congress_2026_.pdf) |
+| **Patrocinio MWC** | Diseño de paquetes de inversión y análisis de público. | [📄 PDF](.asistente-virtual/propuesta_de_patrocinio–mobile_world_congress_2026_.pdf) |
 | **Logística de Sede** | Evaluación técnica de recintos, presupuestos y contingencias. | [📄 PDF](.asistente-virtual/evaluación_logística_de_sede–mobile__world_congress_2026_(simulación_aplicada).pdf) |
 | **Agenda Operativa** | Cronogramas de montaje, desmontaje y coordinación de proveedores. | [📄 PDF](.asistente-virtual/checklist_operativo–coordinación_de_agenda_para_mwc_barcelona_2026_(simulación_aplicada)_.pdf) |
 
