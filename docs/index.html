@@ -130,6 +130,24 @@
     }
     .typed-cursor { color: var(--accent); }
     
+    /* Scroll Indicator */
+    .scroll-indicator {
+      position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+      opacity: 0.6; animation: bounce 2s infinite; color: var(--white);
+    }
+    @keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0) translateX(-50%);} 40% {transform: translateY(-10px) translateX(-50%);} 60% {transform: translateY(-5px) translateX(-50%);} }
+
+    /* Back to Top */
+    .back-to-top {
+      position: fixed; bottom: 6rem; right: 2rem; width: 3rem; height: 3rem;
+      background: var(--primary); color: white; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; opacity: 0; transition: all 0.3s; z-index: 999;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .back-to-top.visible { opacity: 1; }
+
     /* AI Widget */
     .ai-widget {
       position: fixed; bottom: 2rem; right: 2rem; z-index: 1000;
@@ -511,7 +529,7 @@
       </p>
       <div class="hero-actions">
         <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
-        <a href="#contacto" class="btn-secondary">Hablemos</a>
+        <a href="https://drive.google.com/file/d/1XN8tlq32S7LmP5xeDJIzGGTYXkbzaXGB/view?usp=sharing" target="_blank" class="btn-secondary">Descargar CV 📄</a>
       </div>
       <div class="hero-stats">
         <div class="stat-item">
@@ -541,6 +559,10 @@
         <span class="tag">🛡️ Ciberseguridad</span>
       </div>
     </div>
+  </div>
+  <div class="scroll-indicator">
+    <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px;">Scroll</span>
+    <span>↓</span>
   </div>
 </section>
 
@@ -1056,6 +1078,9 @@
   </p>
 </footer>
 
+<!-- Back to Top -->
+<div id="backToTop" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</div>
+
 <!-- AI Widget -->
 <button class="ai-widget" onclick="toggleAI()">
   <span class="ai-icon">🤖</span>
@@ -1129,10 +1154,17 @@
     links.style.gap = '1rem';
   }
 
-  // Active nav link on scroll
-  const sections = document.querySelectorAll('section[id]');
-  window.addEventListener('scroll', () => {
-    let current = '';
+    // Back to Top visibility
+    window.addEventListener('scroll', () => {
+      const btt = document.getElementById('backToTop');
+      if (window.scrollY > 500) btt.classList.add('visible');
+      else btt.classList.remove('visible');
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let current = '';
     sections.forEach(section => {
       const sectionTop = section.offsetTop - 80;
       if (window.scrollY >= sectionTop) {
