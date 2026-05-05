@@ -4,7 +4,7 @@ En esta sección presento mi metodología de trabajo y mi enfoque humano hacia l
 
 ###  Perfil Humano y Profesional
 Mi trabajo se basa en pilares fundamentales de honestidad y seriedad. Puedes consultar mi análisis completo de valores aquí:
-* 📄 **[Análisis: Mi Yo Interior](./CONOCER-MI-YO-INTERIOR.pdf)**
+* 📄 **[Análisis: Mi Yo Interior](./conocer_mi_yo_interior.pdf)**
 
 ### 📂 Proyectos de Gestión
 * **Protocolos de Onboarding:** Estructura de bienvenida para nuevos talentos.
