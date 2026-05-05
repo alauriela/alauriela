@@ -5,7 +5,7 @@
 ### Asistente Virtual Técnica & Creativa · Socia Fundadora de Alonso & Espinosa
 
 [![Portafolio Web](https://img.shields.io/badge/🌐_Portafolio_Web-Ver_ahora-e63946?style=for-the-badge)](https://alauriela.github.io/alauriela/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-conchi--alonso--av-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/conchi-alonso-av)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conchi_Alonso_García-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/conchi-alonso-garcia/)
 [![Empresa](https://img.shields.io/badge/🏢_Empresa-alonsoespinosa.com-1d3557?style=for-the-badge)](https://www.alonsoespinosa.com/)
 [![Email](https://img.shields.io/badge/Email-Contactar-457b9d?style=for-the-badge&logo=gmail)](mailto:conchialonsogarcia5@gmail.com)
 
@@ -73,7 +73,7 @@ Junto a Esperanza Espinosa, ayudamos a pymes con alta carga operativa a recupera
 
 **Sectores:** Construcción · Hostelería · Sanitario · Energías Renovables
 
-🌐 [www.alonsoespinosa.com](https://www.alonsoespinosa.com/)
+🌐 [www.alonsoespinosa.com](https://www.alonsoespinosa.com/) · [LinkedIn empresa](https://www.linkedin.com/company/alonso-espinosa/)
 
 ---
 
@@ -83,7 +83,7 @@ Junto a Esperanza Espinosa, ayudamos a pymes con alta carga operativa a recupera
 | :--- | :--- |
 | 📧 Email | conchialonsogarcia5@gmail.com |
 | 📞 Teléfono | 664 13 83 93 |
-| 💼 LinkedIn | [conchi-alonso-av](https://www.linkedin.com/in/conchi-alonso-av) |
+| 💼 LinkedIn | [conchi-alonso-garcia](https://www.linkedin.com/in/conchi-alonso-garcia/) |
 | 🌐 Empresa | [alonsoespinosa.com](https://www.alonsoespinosa.com/) |
 | 📍 Ubicación | Barcelona · Remoto (España) |
 
