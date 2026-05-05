@@ -39,7 +39,7 @@ Explora mis áreas de especialización y casos prácticos:
 ### 👩‍💼 [Asistente Virtual & Operativa](./asistente-virtual)
 * **Protocolos de Onboarding:** Gestión de talento y procesos de bienvenida.
 * **Gestión de Eventos:** Planificación y comunicación estratégica.
-* **Perfil Personal:** [Análisis Yo Interior](./asistente-virtual/CONOCER-MI-YO-INTERIOR.pdf) - Valores aplicados.
+* **Perfil Personal:** [Análisis Yo Interior](./asistente-virtual/conocer_mi_yo_interior.pdf) - Valores aplicados.
 
 ---
 
