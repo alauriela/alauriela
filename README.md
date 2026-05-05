@@ -1,66 +1,60 @@
-# 👋 Hola, soy Conchi Alonso García
+# 👩‍💼 Asistente Virtual & Soporte Operativo
 
-### Consultora de IA · Operativa Estratégica · Ciberseguridad · Marketing Digital
+> **Metodología de trabajo enfocada en la eficiencia operativa y el valor humano.**
 
-> *Más de 20 años optimizando la operativa empresarial. Experta en integrar tecnología y valores humanos para transformar pymes.*
+---
+
+###  Perfil Humano y Valores
+<table align="center">
+  <tr>
+    <td>
+      <img src="https://img.shields.io/badge/VALORES-Honestidad_|_Seriedad_|_Empatía-blue?style=for-the-badge" alt="Valores">
+      <p align="center">
+        Mi trabajo se basa en pilares fundamentales de ética y profesionalismo.<br>
+        📄 <b><a href="./conocer_mi_yo_interior.pdf">Consultar: Mi Yo Interior</a></b>
+      </p>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 📂 Proyectos de Gestión Destacados
+
+#### 🗓️ Planificación Estratégica de Eventos
+*Simulaciones profesionales para el Mobile World Congress 2026.*
+
+| Proyecto | Descripción | Recursos |
+| :--- | :--- | :--- |
+| **Patrocinio MWC** | Diseño de paquetes de inversión y análisis de público. | [📄 PDF](./propuesta_de_patrocinio-mobile_world_congress%202026%20.pdf) |
+| **Logística de Sede** | Evaluación técnica de recintos, presupuestos y contingencias. | [📄 PDF](./evaluacion_logistica_de_sede-mobile_world_congress_2026_simulacion_aplicada.pdf) |
+| **Agenda Operativa** | Cronogramas de montaje, desmontaje y coordinación. | [📄 PDF](./checklist_operativo_coordinacion_de_agenda_para_mwc_barcelona_2026_simulacion_aplicada%20.pdf) |
+
+---
+
+#### 📊 Control Administrativo y Análisis Digital
+*Herramientas optimizadas para la toma de decisiones basada en datos.*
+
+<div align="center">
+
+| 💰 Gestión Financiera | 🔍 Investigación Digital | 🤖 Estructura para IA |
+| :--- | :--- | :--- |
+| **Control de Ingresos/Gastos** | **Benchmarking Sectorial** | **Matriz de Análisis Comercial** |
+| Registro de saldos y categorías profesionales. | Prospección y contactos comerciales. | Datos optimizados para procesamiento IA. |
+| [📂 Ver Excel](./plantilla_de_control_financiero-ingresos_y_gastos_mensuales_aplicacion_practica.xlsx) | [📂 Ver Excel](./ficha_de_investigacion_digital-empresas_del_sector_optico_y_accesorios_practica_aplicada.xlsx) | [📂 Ver Excel](./analis_comercial_mensual-ejemplo_aplicado_con_estructura_para_ia.xlsx) |
+
+</div>
+
+---
+
+#### ✍️ Comunicación & Soporte IT
+* **Redacción Creativa:** [Blog BlaineBox.es](./bienvenidos_al_blog_de_blainebox.es_tu_rincón_verde.pdf) — Marketing de contenidos.
+* **Soporte IT Admin:** Protocolos de instalación y administración segura de archivos.
+
+---
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/conchi-alonso-garcia" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Perfil_Profesional-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Personal"></a>
-  <a href="https://www.alonsoespinosa.com/" target="_blank"><img src="https://img.shields.io/badge/Web-Alonso_&_Espinosa-1DA1F2?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Web Alonso & Espinosa"></a>
-  <a href="https://www.linkedin.com/company/alonso-espinosa" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Empresa-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Alonso & Espinosa"></a>
+  <a href="../README.md">
+    <img src="https://img.shields.io/badge/⬅️_Volver_al_Inicio-black?style=for-the-badge" />
+  </a>
 </p>
-
----
-
-## 🚀 Sobre mí: Valores y Experiencia
-Mi metodología de trabajo nace de un análisis profundo de mis capacidades. Combino el rigor operativo con una base sólida de **honestidad, seriedad y empatía**. Entiendo que la tecnología es una herramienta para potenciar el talento humano y eliminar la fricción en los negocios.
-
-| ⚖️ Mis Valores | 🏗️ Fortalezas | ❤️ Mi Propósito |
-| :--- | :--- | :--- |
-| **Honestidad:** Transparencia total en cada gestión. | **Organización:** Capacidad para estructurar el caos. | **Ayudar:** Vocación real de servicio y soporte. |
-| **Seriedad:** Rigor profesional y compromiso. | **Adaptabilidad:** Evolución constante hacia la IA y Ciberseguridad. | **Excelencia:** Cuidar cada detalle visual y técnico. |
-
----
-
-## 📂 Portafolio de Proyectos
-
-Explora mis áreas de especialización y casos prácticos:
-
-### 🤖 [IA & Automatización](./ia-automatizacion)
-* **Automatización de Email Marketing:** Estrategia y flujos para el proyecto "Los Ahoras".
-* **Sistema de Trazabilidad:** Consultoría operativa para el cumplimiento normativo en hostelería.
-* **Herramientas de Presupuesto:** Optimización financiera avanzada para Alonso & Espinosa.
-
-### 🛡️ [Ciberseguridad & IT](./ciberseguridad)
-* **Auditoría NIST:** Gestión de riesgos y activos (Caso Botium Toys).
-* **Análisis de Redes:** Monitorización de tráfico e incidentes con Wireshark.
-* **Soporte Técnico:** Administración de sistemas y gestión de software corporativo.
-
-### 👩‍💼 [Asistente Virtual & Operativa](./asistente-virtual)
-* **Protocolos de Onboarding:** Gestión de talento y procesos de bienvenida.
-* **Gestión de Eventos:** Planificación y comunicación estratégica.
-* **Perfil Personal:** [Análisis Yo Interior](./asistente-virtual/conocer_mi_yo_interior.pdf) - Valores aplicados.
-
----
-
-## 🎓 [Mis Certificaciones](./certificados)
-*(Haz clic para ver mi galería completa de títulos y diplomas)*.
-
-* 🏆 **Consultora de IA** (IQS Executive, 120h).
-* 🛡️ **Especialista en Ciberseguridad** (Google/Coursera).
-* 👩‍💻 **Asistente Virtual Certificada** (Mamis Digitales).
-
----
-
-## 🛠️ Stack Tecnológico
-`IA Generativa (ChatGPT/Claude)` `Make.com` `n8n` `Wireshark` `Python` `Asana` `Notion` `Google Workspace`
-
----
-
-## 📬 Contacto
-📧 **conchialonsogarcia5@gmail.com**  
-🔗 **[LinkedIn Profesional](https://www.linkedin.com/in/conchi-alonso-garcia)**  
-🏢 **[Alonso & Espinosa](https://www.alonsoespinosa.com/)**
-
----
-<p align="center"><i>"La tecnología es el medio, la confianza es la base."</i></p>
