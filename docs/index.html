@@ -27,20 +27,22 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <style>
     :root {
-      --primary: #1a1a2e;
-      --accent: #e63946;
-      --accent2: #457b9d;
-      --light: #f8f9fa;
-      --mid: #e9ecef;
-      --text: #2b2d42;
-      --muted: #6c757d;
+      --primary: #0f172a;
+      --accent: #f43f5e;
+      --accent-soft: rgba(244, 63, 94, 0.1);
+      --accent2: #38bdf8;
+      --light: #f8fafc;
+      --mid: #e2e8f0;
+      --text: #1e293b;
+      --muted: #64748b;
       --white: #ffffff;
       --card-bg: #ffffff;
-      --gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-      --shadow: 0 4px 24px rgba(0,0,0,0.08);
-      --shadow-hover: 0 8px 40px rgba(0,0,0,0.15);
-      --radius: 16px;
-      --radius-sm: 8px;
+      --gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      --shadow: 0 10px 30px -10px rgba(0,0,0,0.1);
+      --shadow-hover: 0 20px 40px -15px rgba(0,0,0,0.2);
+      --radius: 24px;
+      --radius-sm: 12px;
+      --glass: rgba(255, 255, 255, 0.9);
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -52,9 +54,13 @@
       color: var(--text);
       background: var(--light);
       line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
     }
+    
+    /* Custom Selection */
+    ::selection { background: var(--accent); color: white; }
 
-    /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: rgba(26,26,46,0.95);
@@ -305,19 +311,26 @@
       gap: 1.5rem;
     }
     .project-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: var(--radius); padding: 2rem;
-      transition: all 0.3s; cursor: default;
+      background: var(--card-bg);
+      border: 1px solid var(--mid);
+      border-radius: var(--radius); padding: 2.5rem;
+      transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      cursor: default;
       position: relative; overflow: hidden;
+      box-shadow: var(--shadow);
     }
     .project-card::before {
       content: '';
-      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      position: absolute; top: 0; left: 0; right: 0; height: 4px;
       background: var(--accent); transform: scaleX(0);
-      transition: transform 0.3s; transform-origin: left;
+      transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      transform-origin: left;
     }
-    .project-card:hover { background: rgba(255,255,255,0.08); transform: translateY(-4px); }
+    .project-card:hover { 
+      transform: translateY(-15px); 
+      box-shadow: var(--shadow-hover);
+      border-color: var(--accent-soft);
+    }
     .project-card:hover::before { transform: scaleX(1); }
 
     .project-icon {
