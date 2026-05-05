@@ -13,32 +13,32 @@
 ---
 
 ## 🚀 Sobre mí
-Especialista en **Consultoría Operativa e IA aplicada**. Mi enfoque se centra en eliminar la fricción interna de las empresas mediante el rediseño de procesos y la implementación de soluciones tecnológicas escalables. Con formación sólida en **Ciberseguridad por Google** y **Consultoría de IA por IQS**, garantizo una transición digital eficiente, segura y orientada a resultados[cite: 1, 2].
+Especialista en **Consultoría Operativa e IA aplicada**. Mi enfoque se centra en eliminar la fricción interna de las empresas mediante el rediseño de procesos y la implementación de soluciones tecnológicas escalables. Con formación sólida en **Ciberseguridad por Google** y **Consultoría de IA por IQS**, garantizo una transición digital eficiente, segura y orientada a resultados.
 
 ---
 
 ## 🎓 Certificaciones Destacadas
-*   **Consultora de IA** — *IQS Executive* (120h). Especialización en implementación estratégica de IA en entornos corporativos (2026).
-*   **Google Cybersecurity Specialization** — *Coursera*. Gestión de riesgos, criptografía y análisis forense de redes[cite: 1].
-*   **Certificado Asistente Virtual** — *Mamis Digitales*. Gestión de proyectos, comunicación digital y soporte ejecutivo[cite: 1].
+* **Consultora de IA** — *IQS Executive* (120h). Especialización en implementación estratégica de IA en entornos corporativos (2026).
+* **Google Cybersecurity Specialization** — *Coursera*. Gestión de riesgos, criptografía y análisis forense de redes.
+* **Certificado Asistente Virtual** — *Mamis Digitales*. Gestión de proyectos, comunicación digital y soporte ejecutivo.
 
 ---
 
 ## 📂 Proyectos Seleccionados
 
 ### 🤖 IA & Automatización de Procesos
-* **📧 Automatización Email Marketing — Los Ahoras:** Auditoría operativa y creación de flujos automatizados de nutrición y venta[cite: 1].
-* **📊 Sistema de Presupuestos Inteligentes:** Desarrollo de herramientas de control financiero para la optimización de costes en Alonso & Espinosa[cite: 1].
-* **🍽️ Consultoría Operativa — Trazabilidad:** Diseño de sistemas de gestión de alérgenos y seguridad operativa para el sector hostelería[cite: 1].
+* **📧 Automatización Email Marketing — Los Ahoras:** Auditoría operativa y creación de flujos automatizados de nutrición y venta.
+* **📊 Sistema de Presupuestos Inteligentes:** Desarrollo de herramientas de control financiero para la optimización de costes en Alonso & Espinosa.
+* **🍽️ Consultoría Operativa — Trazabilidad:** Diseño de sistemas de gestión de alérgenos y seguridad operativa para el sector hostelería.
 
 ### 🔒 Ciberseguridad & Infraestructura
-* **🛡️ Auditoría NIST (Caso Botium Toys):** Análisis de vulnerabilidades y diseño de controles de seguridad basados en el framework NIST CSF[cite: 1].
+* **🛡️ Auditoría NIST (Caso Botium Toys):** Análisis de vulnerabilidades y diseño de controles de seguridad basados en el framework NIST CSF.
 * **🌐 Seguridad de Red & PKI:** Implementación de protocolos de cifrado y gestión de certificados digitales para la protección de activos.
 
 ---
 
 ## 🛠️ Stack Tecnológico
-`IA Generativa (ChatGPT/Claude)` `Make.com` `n8n` `Wireshark` `Python` `Asana` `Notion` `Google Workspace`[cite: 1]
+`IA Generativa (ChatGPT/Claude)` `Make.com` `n8n` `Wireshark` `Python` `Asana` `Notion` `Google Workspace`
 
 ---
 
@@ -49,12 +49,3 @@ Especialista en **Consultoría Operativa e IA aplicada**. Mi enfoque se centra e
 
 ---
 <p align="center"><i>Portafolio verificado y actualizado: mayo 2026</i></p>
-Si buscas a alguien que combine visión operativa, criterio tecnológico y capacidad de ejecución real:
-
-📧 **conchialonsogarcia5@gmail.com**  
-🔗 **[LinkedIn](https://linkedin.com/in/conchi-alonso-garcia)**  
-🌐 **[Alonso & Espinosa](https://alonsoespinosa.com)**
-
----
-
-*Portafolio actualizado: mayo 2026*
