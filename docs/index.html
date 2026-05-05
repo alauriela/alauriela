@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,500&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <style>
     :root {
       --primary: #1a1a2e;
@@ -110,7 +112,29 @@
       font-size: clamp(2.5rem, 5vw, 4rem);
       color: var(--white); line-height: 1.15;
       margin-bottom: 1.5rem;
+      min-height: 8rem;
     }
+    .typed-cursor { color: var(--accent); }
+    
+    /* AI Widget */
+    .ai-widget {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 1000;
+      background: var(--accent); color: white;
+      padding: 1rem 1.5rem; border-radius: 3rem;
+      box-shadow: 0 10px 25px rgba(230, 57, 70, 0.3);
+      cursor: pointer; display: flex; align-items: center; gap: 0.75rem;
+      transition: all 0.3s; border: none; font-weight: 600;
+    }
+    .ai-widget:hover { transform: scale(1.05); background: #f14d5a; }
+    .ai-bubble {
+      position: absolute; bottom: 120%; right: 0; width: 280px;
+      background: white; color: var(--primary); padding: 1.5rem;
+      border-radius: 1.5rem; box-shadow: var(--shadow-hover);
+      display: none; font-size: 0.9rem; line-height: 1.5;
+      border: 1px solid var(--mid);
+    }
+    .ai-bubble.active { display: block; animation: fadeInUp 0.3s ease; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     .hero-title em { font-style: italic; color: #ff6b7a; }
     .hero-subtitle {
       font-size: 1.1rem; color: rgba(255,255,255,0.75);
@@ -465,7 +489,7 @@
       <div class="hero-badge">Disponible para proyectos</div>
       <h1 class="hero-title">
         Asistente Virtual<br/>
-        <em>Técnica & Creativa</em>
+        <span id="typed-text" style="font-style: italic; font-weight: 500; color: var(--accent);"></span>
       </h1>
       <p class="hero-subtitle">
         Especializada en IA, automatización de procesos y gestión operativa. 
@@ -978,7 +1002,41 @@
   </p>
 </footer>
 
+<!-- AI Widget -->
+<button class="ai-widget" onclick="toggleAI()">
+  <span class="ai-icon">🤖</span>
+  <span>Asistente IA</span>
+  <div id="ai-bubble" class="ai-bubble">
+    <strong>¡Hola! Soy el asistente de Conchi.</strong><br/><br/>
+    ¿Buscas optimizar tu negocio con IA o necesitas poner orden en tu operativa?<br/><br/>
+    Conchi puede ayudarte a automatizar tareas y recuperar tu tiempo. ¡Escríbele un mensaje!
+  </div>
+</button>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+  // Initialize AOS
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+  });
+
+  // Typed.js initialization
+  new Typed('#typed-text', {
+    strings: ['Técnica & Creativa', 'Experta en IA', 'Especialista Shopify', 'Consultora Operativa'],
+    typeSpeed: 60,
+    backSpeed: 40,
+    loop: true,
+    backDelay: 2000
+  });
+
+  // AI Widget Toggle
+  function toggleAI() {
+    const bubble = document.getElementById('ai-bubble');
+    bubble.classList.toggle('active');
+  }
+
   // Intersection Observer for fade-in animations
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
