@@ -32,127 +32,68 @@ Actualmente, me especializo en **consultoría operativa e IA aplicada**, con el 
 
 ---
 
-## 📂 Proyectos Destacados
+## 📂 Proyectos y Prácticas Destacadas
 
-Aquí se presenta una selección de proyectos que demuestran mi capacidad para aplicar soluciones prácticas y generar resultados concretos en diversas áreas. Cada proyecto incluye una breve descripción y enlaces a la documentación o artefactos relevantes.
+A continuación, se detallan los proyectos y ejercicios prácticos realizados, organizados por áreas de competencia. Estos trabajos reflejan la aplicación de herramientas avanzadas para resolver problemas reales de negocio.
 
 ### 🤖 IA Aplicada & Automatización
 
-#### Automatización Email Marketing — Los Ahoras
-Propuesta completa de automatización de email marketing para cliente real, incluyendo diagnóstico, roadmap por fases e implementación.
-- 📄 [Propuesta Fase 1](./ia-automatizacion/propuesta-email-marketing-los-ahoras.pdf)
-- 🗺️ [Roadmap por fases](./ia-automatizacion/roadmap-email-marketing-los-ahoras.pdf)
+*   **🧩 GPT Interno — Gestión Inteligente de Citas:** Diseño de una solución de IA para una consultora sanitaria, optimizando la gestión de agendas y atención al paciente.
+*   **⚙️ Automatización de Backups:** Diseño de solución para procesos repetitivos de copias de seguridad, eliminando el error humano.
+*   **📊 Análisis de Ventas LED:** Panel de KPIs y tendencias de ventas utilizando herramientas de análisis de datos para la toma de decisiones.
+*   **🤖 Clasificación y Búsqueda de IAs:** Auditoría y filtrado de herramientas de IA según su aplicabilidad real en entornos corporativos.
 
-#### Sistema de Trazabilidad — Restaurante
-Diseño e implementación de sistema de trazabilidad y control de alérgenos para hostelería.
-- 📊 [Sistema Trazabilidad Restaurante 2026](./ia-automatizacion/sistema-trazabilidad-restaurante.xlsx)
-- 🥗 [Sistema Alérgenos Hostelería](./ia-automatizacion/sistema-alergenos-hosteleria.xlsx)
+### 📣 Marketing Digital & Estrategia
 
-#### Presupuesto Empresarial — Alonso & Espinosa
-Modelo de presupuesto empresarial diseñado para obra y proyectos.
-- 📊 [Presupuesto Empresarial](./ia-automatizacion/presupuesto-empresarial.xlsx)
+*   **📈 Matriz DAFO y Estrategias:** Análisis profundo de debilidades, amenazas, fortalezas y oportunidades con roadmap estratégico de ejecución.
+*   **📧 Automatización Email Marketing — Los Ahoras:** Propuesta completa de diagnóstico e implementación de campañas automatizadas.
+*   **🛍️ Proyecto Shopify — Bath EcoShop:** Implementación práctica de tienda online, gestión de catálogo y optimización de checkout.
+*   **🔍 Análisis Competitivo:** Estudio de mercado y empresas competidoras para el posicionamiento de marca.
 
-### 📣 Marketing Digital
+### 👩‍💼 Asistente Virtual & Operaciones
 
-#### Análisis de Campaña Email Marketing
-Informe de rendimiento y conclusiones de campaña real de email marketing.
-- 📄 [Informe Campaña Email Marketing](./marketing/informe-campana-email-marketing.pdf)
-- 📈 [Conclusiones rendimiento](./marketing/conclusiones-rendimiento-email-marketing.pdf)
-
-#### Mini Formación Interna — Los Ahoras & MAGIA
-Diseño y entrega de formación interna para equipos sobre herramientas digitales.
-- 📄 [Mini Formación Interna](./marketing/mini-formacion-interna-los-ahoras-magia.pdf)
-
-### 👩‍💼 Asistente Virtual
-
-#### Onboarding para Autónomos y Empleados
-Diseño de proceso de onboarding completo para asistencia virtual, incluyendo tareas, checklists y protocolos.
-- 📋 Proceso de onboarding estructurado por fases
-- ✅ Checklist de tareas del asistente virtual
-- 🤝 Protocolo de incorporación y primeras semanas
-
-#### Propuesta MWC 2026
-Propuesta de patrocinio para evento de alto nivel (Mobile World Congress 2026), elaborada como asistente virtual de dirección.
-- 📄 [Propuesta Patrocinio MWC 2026](./asistente-virtual/propuesta-patrocinio-mwc-2026.pdf)
-
-#### Presupuesto de Servicios
-Modelo de presupuesto para servicios de asistente virtual.
-- 📊 [Presupuesto Asistente Virtual](./asistente-virtual/presupuesto-asistente-virtual.xlsx)
+*   **📋 Gestión Comercial EcoLuz Doméstica:** Conjunto completo de documentación comercial (preparación de reuniones, actas, consentimientos informados) en varios idiomas.
+*   **🤝 Protocolo de Onboarding:** Diseño de procesos de incorporación para autónomos y empleados, asegurando una transición eficiente.
+*   **💼 Soporte Ejecutivo MWC 2026:** Propuesta de patrocinio y gestión de eventos de alto nivel.
 
 ### 🔒 Ciberseguridad & Soporte IT
-*Formación activa: Google Cybersecurity Certificate (Coursera) — En curso*
 
-#### Análisis de Incidentes de Red
-Análisis completo de tráfico de red con herramientas profesionales: identificación de vectores de ataque, documentación del incidente y recomendaciones.
-- 🌐 [Cybersecurity Incident Report — Network Traffic Analysis](./ciberseguridad/cybersecurity-incident-report-network-traffic.md)
-- 🦈 [Análisis Wireshark TCP/HTTP](./ciberseguridad/wireshark-tcphttp-log-analysis.md)
-- 📡 [Análisis tcpdump](./ciberseguridad/tcpdump-traffic-log-analysis.md)
-
-#### Gestión de Riesgos — Caso Botium Toys
-Evaluación completa de riesgos de seguridad, alcance, objetivos y controles para empresa real ficticia.
-- 📋 [Scope, Goals & Risk Assessment — Botium Toys](./ciberseguridad/botium-toys-risk-assessment.md)
-- ✅ [Controls & Compliance Checklist](./ciberseguridad/controls-compliance-checklist.md)
-- 🏷️ [Control Categories](./ciberseguridad/control-categories.md)
-
-#### Aplicación del Framework NIST CSF
-Implementación práctica del marco de ciberseguridad NIST sobre un incidente real simulado.
-- 🛡️ [Applying the NIST CSF](./ciberseguridad/applying-nist-csf.md)
-
-#### Evaluación de Riesgos de Seguridad
-Informe completo de evaluación de riesgos con análisis de vulnerabilidades y recomendaciones.
-- 📄 [Security Risk Assessment Report](./ciberseguridad/security-risk-assessment-report.md)
-- 🔧 [Network Hardening Tools](./ciberseguridad/network-hardening-tools.md)
-
-### ⚙️ Consultoría Operativa — Alonso & Espinosa
-
-Proyectos desarrollados en el marco de la consultoría Alonso & Espinosa, centrada en optimización de procesos para pymes.
-
-**Servicios:**
-- Diagnóstico de operativa interna y detección de puntos de fricción
-- Diseño e implantación de mejoras adaptadas a la capacidad del equipo
-- Centralización de información para reducir dispersión y errores
-- Aplicación responsable de tecnología e IA como apoyo operativo
-
-🌐 [Ver web de la consultoría](https://alonsoespinosa.com)
+*   **🛡️ Framework NIST CSF:** Aplicación práctica del marco de ciberseguridad sobre incidentes reales simulados.
+*   **🌐 Análisis de Tráfico de Red:** Informes de incidentes basados en análisis con Wireshark y tcpdump.
+*   **📋 Auditoría de Riesgos — Botium Toys:** Evaluación de controles, cumplimiento y gestión de vulnerabilidades.
 
 ---
 
 ## 🎓 Formación y Certificados
 
-| Certificado | Plataforma | Estado |
-|---|---|---|
-| Google Cybersecurity Certificate | Coursera / Google | 🔄 En curso |
-| Gestión de Riesgos (Curso 2) | Google / Coursera | ✅ Completado |
-| Fundamentos de Ciberseguridad (Curso 1) | Google / Coursera | ✅ Completado |
-| Asistente Virtual | Formación especializada | ✅ Completado |
-| Marketing Digital | Formación especializada | ✅ Completado |
-| IA Aplicada a Negocios | Formación continua | ✅ Completado |
+He consolidado mi experiencia con certificaciones de instituciones líderes:
 
-📁 [Ver certificados completos](./certificados/)
+*   **Google Cybersecurity Certificate** (Coursera) — *En curso*
+*   **Certificado MAGIA para Consultora de IA** (2026)
+*   **Certificado Asistente Virtual** (Mamis Digitales, 2025)
+*   **Especialización en Gestión de Riesgos y Fundamentos de Ciberseguridad** (Google/Coursera)
+*   **IA Aplicada a Negocios** (Formación continua)
 
 ---
 
 ## 🛠️ Herramientas y Tecnologías
 
 **IA & Automatización:** ChatGPT · Claude · Make.com · n8n · Zapier  
-**Marketing Digital:** Email marketing · Análisis de campañas · CRM  
-**Ciberseguridad:** Wireshark · tcpdump · NIST CSF · CISSP (estudio)  
+**Marketing Digital:** Email marketing · Shopify · CRM · Análisis de campañas  
+**Ciberseguridad:** Wireshark · tcpdump · NIST CSF · Auditoría de riesgos  
 **Ofimática avanzada:** Google Workspace · Microsoft 365 · Notion  
 **Gestión de proyectos:** Asana · Trello · ClickUp  
-**Diseño básico:** Canva · herramientas de presentación  
 
 ---
 
 ## 📬 Contacto
 
-Si estás buscando a alguien que combine visión operativa, criterio tecnológico y capacidad de ejecución real, no dudes en contactarme:
+Si buscas a alguien que combine visión operativa, criterio tecnológico y capacidad de ejecución real:
 
 📧 **conchialonsogarcia5@gmail.com**  
-📞 **664 13 83 93**  
 🔗 **[LinkedIn](https://linkedin.com/in/conchi-alonso-garcia)**  
 🌐 **[Alonso & Espinosa](https://alonsoespinosa.com)**
 
 ---
 
-*Portafolio actualizado: mayo 2026*  
-*Repositorio separado del sitio web de Alonso & Espinosa*
+*Portafolio actualizado: mayo 2026*
