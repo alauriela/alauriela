@@ -168,7 +168,9 @@
     .hero-avatar {
       position: relative; z-index: 1;
       width: 100%; height: 100%; border-radius: 50%;
-      object-fit: cover; object-position: top;
+      object-fit: cover; 
+      object-position: center 15%; /* Sube la imagen para centrar la cara */
+      transform: scale(1.15); /* Zoom para mejor encuadre */
       border: 4px solid var(--primary);
     }
     .hero-avatar-placeholder {
