@@ -1,8 +1,8 @@
-# 👋 Conchi Alonso García — Portafolio Profesional
+# 👋 Hola, soy Conchi Alonso García
 
 ### Consultora de IA · Operativa Estratégica · Ciberseguridad · Marketing Digital
 
-> *Más de 20 años optimizando la operativa empresarial. Experta en integrar IA y Ciberseguridad para transformar pymes.*
+> *Más de 20 años optimizando la operativa empresarial. Experta en integrar tecnología y valores humanos para transformar pymes.*
 
 <p align="center">
   <a href="https://www.linkedin.com/in/conchi-alonso-garcia" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Perfil_Profesional-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Personal"></a>
@@ -12,40 +12,58 @@
 
 ---
 
-## 🚀 Sobre mí
-Especialista en **Consultoría Operativa e IA aplicada**. Mi enfoque se centra en eliminar la fricción interna de las empresas mediante el rediseño de procesos y la implementación de soluciones tecnológicas escalables. Con formación sólida en **Ciberseguridad por Google** y **Consultoría de IA por IQS**, garantizo una transición digital eficiente, segura y orientada a resultados.
+## 🚀 Sobre mí: Valores y Experiencia
+Mi trayectoria no se basa solo en herramientas, sino en una base sólida de **honestidad, seriedad y empatía**. Entiendo que detrás de cada proceso hay personas, y mi objetivo es facilitarles la vida mediante la tecnología.
+
+| ⚖️ Mis Valores | 🏗️ Fortalezas | ❤️ Mi Propósito |
+| :--- | :--- | :--- |
+| **Honestidad:** Transparencia y ética en cada gestión. | **Organización:** Capacidad para estructurar el caos. | **Ayudar:** Vocación real de servicio y soporte. |
+| **Seriedad:** Rigor profesional y compromiso. | **Adaptabilidad:** Evolución constante (IA & IT). | **Excelencia:** Cuidar cada detalle visual y técnico. |
+
+---
+
+## 📂 Portafolio de Proyectos
+
+Haz clic en las carpetas para ver los trabajos detallados:
+
+### 🤖 [IA & Automatización](./ia-automatizacion)
+* **Automatización de Email Marketing:** Estrategia y flujos para "Los Ahoras".
+* **Sistema de Trazabilidad:** Consultoría operativa para el sector hostelería.
+* **Herramientas de Presupuesto:** Optimización financiera avanzada.
+
+### 🛡️ [Ciberseguridad & IT](./ciberseguridad)
+* **Auditoría NIST:** Gestión de riesgos y vulnerabilidades (Caso Botium Toys).
+* **Análisis de Redes:** Monitorización de tráfico con Wireshark y tcpdump.
+* **Soporte Técnico:** Administración de sistemas y software corporativo.
+
+### 👩‍💼 [Asistente Virtual & Operativa](./asistente-virtual)
+* **Protocolos de Onboarding:** Gestión de talento y bienvenida de colaboradores.
+* **Gestión de Eventos:** Planificación y comunicación estratégica.
+* **Análisis Personal:** [Mi Yo Interior](./asistente-virtual/CONOCER-MI-YO-INTERIOR.pdf) - Valores aplicados al trabajo.
 
 ---
 
 ## 🎓 Certificaciones Destacadas
-* **Consultora de IA** — *IQS Executive* (120h). Especialización en implementación estratégica de IA en entornos corporativos (2026).
-* **Google Cybersecurity Specialization** — *Coursera*. Gestión de riesgos, criptografía y análisis forense de redes.
-* **Certificado Asistente Virtual** — *Mamis Digitales*. Gestión de proyectos, comunicación digital y soporte ejecutivo.
+*(Todos los diplomas están disponibles en la carpeta [Certificados](./certificados))*
 
----
-
-## 📂 Proyectos Seleccionados
-
-### 🤖 IA & Automatización de Procesos
-* **📧 Automatización Email Marketing — Los Ahoras:** Auditoría operativa y creación de flujos automatizados de nutrición y venta.
-* **📊 Sistema de Presupuestos Inteligentes:** Desarrollo de herramientas de control financiero para la optimización de costes en Alonso & Espinosa.
-* **🍽️ Consultoría Operativa — Trazabilidad:** Diseño de sistemas de gestión de alérgenos y seguridad operativa para el sector hostelería.
-
-### 🔒 Ciberseguridad & Infraestructura
-* **🛡️ Auditoría NIST (Caso Botium Toys):** Análisis de vulnerabilidades y diseño de controles de seguridad basados en el framework NIST CSF.
-* **🌐 Seguridad de Red & PKI:** Implementación de protocolos de cifrado y gestión de certificados digitales para la protección de activos.
+* 🏆 **Consultora de IA** (IQS Executive, 120h)
+* 🛡️ **Ciberseguridad Profesional** (Google/Coursera)
+* 👩‍💻 **Asistente Virtual Certificada** (Mamis Digitales)
+* 📈 **Especialista en Marketing Digital e IA**
 
 ---
 
 ## 🛠️ Stack Tecnológico
-`IA Generativa (ChatGPT/Claude)` `Make.com` `n8n` `Wireshark` `Python` `Asana` `Notion` `Google Workspace`
+`ChatGPT / Claude` `Make.com / n8n` `Wireshark` `Python` `Asana / Notion` `Google Workspace`
 
 ---
 
 ## 📬 Contacto
-📧 **conchialonsogarcia5@gmail.com**  
-🔗 **[LinkedIn Profesional](https://www.linkedin.com/in/conchi-alonso-garcia)**  
-🏢 **[Alonso & Espinosa](https://www.alonsoespinosa.com/)**
+¿Hablamos sobre cómo puedo ayudar a tu organización?
+
+* 📧 **Email:** [conchialonsogarcia5@gmail.com](mailto:conchialonsogarcia5@gmail.com)
+* 🔗 **LinkedIn:** [conchi-alonso-garcia](https://www.linkedin.com/in/conchi-alonso-garcia)
+* 🏢 **Empresa:** [Alonso & Espinosa](https://www.alonsoespinosa.com/)
 
 ---
-<p align="center"><i>Portafolio verificado y actualizado: mayo 2026</i></p>
+<p align="center"><i>"La tecnología es el medio, la confianza es la base."</i></p>
