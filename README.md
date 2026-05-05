@@ -13,12 +13,12 @@
 ---
 
 ## 🚀 Sobre mí: Valores y Experiencia
-Mi metodología de trabajo nace de un análisis profundo de mis capacidades. Combino el rigor operativo con una base sólida de **honestidad, seriedad y empatía**. Entiendo que la tecnología es una herramienta para potenciar el talento humano y eliminar la fricción en los negocios[cite: 1, 2].
+Mi metodología de trabajo nace de un análisis profundo de mis capacidades. Combino el rigor operativo con una base sólida de **honestidad, seriedad y empatía**. Entiendo que la tecnología es una herramienta para potenciar el talento humano y eliminar la fricción en los negocios.
 
 | ⚖️ Mis Valores | 🏗️ Fortalezas | ❤️ Mi Propósito |
 | :--- | :--- | :--- |
-| **Honestidad:** Transparencia total en cada gestión[cite: 1]. | **Organización:** Capacidad para estructurar el caos[cite: 1]. | **Ayudar:** Vocación real de servicio y soporte[cite: 1]. |
-| **Seriedad:** Rigor profesional y compromiso[cite: 1]. | **Adaptabilidad:** Evolución constante hacia la IA y Ciberseguridad[cite: 2]. | **Excelencia:** Cuidar cada detalle visual y técnico. |
+| **Honestidad:** Transparencia total en cada gestión. | **Organización:** Capacidad para estructurar el caos. | **Ayudar:** Vocación real de servicio y soporte. |
+| **Seriedad:** Rigor profesional y compromiso. | **Adaptabilidad:** Evolución constante hacia la IA y Ciberseguridad. | **Excelencia:** Cuidar cada detalle visual y técnico. |
 
 ---
 
@@ -27,38 +27,38 @@ Mi metodología de trabajo nace de un análisis profundo de mis capacidades. Com
 Explora mis áreas de especialización y casos prácticos:
 
 ### 🤖 [IA & Automatización](./ia-automatizacion)
-* **Automatización de Email Marketing:** Estrategia y flujos para el proyecto "Los Ahoras"[cite: 1].
-* **Sistema de Trazabilidad:** Consultoría operativa para el cumplimiento normativo en hostelería[cite: 1].
-* **Herramientas de Presupuesto:** Optimización financiera avanzada para Alonso & Espinosa[cite: 1].
+* **Automatización de Email Marketing:** Estrategia y flujos para el proyecto "Los Ahoras".
+* **Sistema de Trazabilidad:** Consultoría operativa para el cumplimiento normativo en hostelería.
+* **Herramientas de Presupuesto:** Optimización financiera avanzada para Alonso & Espinosa.
 
 ### 🛡️ [Ciberseguridad & IT](./ciberseguridad)
-* **Auditoría NIST:** Gestión de riesgos y activos (Caso Botium Toys)[cite: 1].
-* **Análisis de Redes:** Monitorización de tráfico e incidentes con Wireshark[cite: 1].
+* **Auditoría NIST:** Gestión de riesgos y activos (Caso Botium Toys).
+* **Análisis de Redes:** Monitorización de tráfico e incidentes con Wireshark.
 * **Soporte Técnico:** Administración de sistemas y gestión de software corporativo.
 
 ### 👩‍💼 [Asistente Virtual & Operativa](./asistente-virtual)
-* **Protocolos de Onboarding:** Gestión de talento y procesos de bienvenida[cite: 1].
-* **Gestión de Eventos:** Planificación y comunicación estratégica[cite: 1].
-* **Perfil Personal:** [Análisis Yo Interior](./asistente-virtual/CONOCER-MI-YO-INTERIOR.pdf) - Valores aplicados[cite: 1].
+* **Protocolos de Onboarding:** Gestión de talento y procesos de bienvenida.
+* **Gestión de Eventos:** Planificación y comunicación estratégica.
+* **Perfil Personal:** [Análisis Yo Interior](./asistente-virtual/CONOCER-MI-YO-INTERIOR.pdf) - Valores aplicados.
 
 ---
 
 ## 🎓 [Mis Certificaciones](./certificados)
-*(Haz clic para ver mi galería completa de títulos y diplomas)*[cite: 1, 2]
+*(Haz clic para ver mi galería completa de títulos y diplomas)*.
 
-* 🏆 **Consultora de IA** (IQS Executive, 120h)[cite: 2].
-* 🛡️ **Especialista en Ciberseguridad** (Google/Coursera)[cite: 1].
-* 👩‍💻 **Asistente Virtual Certificada** (Mamis Digitales)[cite: 1].
+* 🏆 **Consultora de IA** (IQS Executive, 120h).
+* 🛡️ **Especialista en Ciberseguridad** (Google/Coursera).
+* 👩‍💻 **Asistente Virtual Certificada** (Mamis Digitales).
 
 ---
 
 ## 🛠️ Stack Tecnológico
-`IA Generativa (ChatGPT/Claude)` `Make.com` `n8n` `Wireshark` `Python` `Asana` `Notion` `Google Workspace`[cite: 1]
+`IA Generativa (ChatGPT/Claude)` `Make.com` `n8n` `Wireshark` `Python` `Asana` `Notion` `Google Workspace`
 
 ---
 
 ## 📬 Contacto
-📧 **conchialonsogarcia5@gmail.com**[cite: 1]  
+📧 **conchialonsogarcia5@gmail.com**  
 🔗 **[LinkedIn Profesional](https://www.linkedin.com/in/conchi-alonso-garcia)**  
 🏢 **[Alonso & Espinosa](https://www.alonsoespinosa.com/)**
 
