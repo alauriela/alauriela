@@ -1,69 +1,45 @@
-# 👋 Hola, soy Conchi Alonso García
+# 🎓 Mis Certificaciones y Diplomas
 
-### Consultora de IA · Operativa Estratégica · Ciberseguridad · Marketing Digital
-
-> *Más de 20 años optimizando la operativa empresarial. Experta en integrar tecnología y valores humanos para transformar pymes.*
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/conchi-alonso-garcia" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Perfil_Profesional-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Personal"></a>
-  <a href="https://www.alonsoespinosa.com/" target="_blank"><img src="https://img.shields.io/badge/Web-Alonso_&_Espinosa-1DA1F2?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Web Alonso & Espinosa"></a>
-  <a href="https://www.linkedin.com/company/alonso-espinosa" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Empresa-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Alonso & Espinosa"></a>
-</p>
+Esta sección contiene las acreditaciones oficiales que avalan mi formación técnica en IA, Ciberseguridad y Gestión Operativa.
 
 ---
 
-## 🚀 Sobre mí: Valores y Experiencia
-Mi trayectoria no se basa solo en herramientas, sino en una base sólida de **honestidad, seriedad y empatía**. Entiendo que detrás de cada proceso hay personas, y mi objetivo es facilitarles la vida mediante la tecnología.
+### 🌟 Certificaciones Destacadas
 
-| ⚖️ Mis Valores | 🏗️ Fortalezas | ❤️ Mi Propósito |
+<table>
+  <tr>
+    <td align="center">
+      <img src="./certificado_iqs_consultora_de_ia.png" width="350px"/><br/>
+      <b>Consultora de IA (120h)</b><br/><i>IQS Executive (2026)</i>
+    </td>
+    <td align="center">
+      <img src="./certificado_iqs_asistente_virtual.png" width="350px"/><br/>
+      <b>Asistente Virtual con IA</b><br/><i>IQS Executive (2025)</i>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🛡️ Especializaciones en Ciberseguridad (Google)
+
+He completado una serie de especializaciones técnicas enfocadas en la protección de activos digitales y gestión de riesgos:
+
+| Certificado | Emisor | Enlace al archivo |
 | :--- | :--- | :--- |
-| **Honestidad:** Transparencia y ética en cada gestión. | **Organización:** Capacidad para estructurar el caos. | **Ayudar:** Vocación real de servicio y soporte. |
-| **Seriedad:** Rigor profesional y compromiso. | **Adaptabilidad:** Evolución constante (IA & IT). | **Excelencia:** Cuidar cada detalle visual y técnico. |
+| **Gestión de Riesgos** | Google / Coursera | [Coursera S7NER7SYWR1H.png](./Coursera%20S7NER7SYWR1H.png) |
+| **Seguridad de Redes** | Google / Coursera | [Coursera VGHVSJVPJ24.png](./Coursera%20VGHVSJVPJ24.png) |
+| **Fundamentos de Ciberseguridad** | Google / Coursera | [Coursera BD7VEQGMNDM4.png](./Coursera%20BD7VEQGMNDM4.png) |
+| **Detección y Respuesta** | Google / Coursera | [Coursera BZD2J7G87HKM.png](./Coursera%20BZD2J7G87HKM.png) |
+| **Activos e Identidades** | Google / Coursera | [Coursera FYA2SNC56WD5.png](./Coursera%20FYA2SNC56WD5.png) |
+| **Controles de Seguridad** | Google / Coursera | [Coursera KVY555AQQWRC.png](./Coursera%20KVY555AQQWRC.png) |
+| **Linux y SQL en Ciberseguridad** | Google / Coursera | [Coursera YMWGHND6C8U8.png](./Coursera%20YMWGHND6C8U8.png) |
 
 ---
 
-## 📂 Portafolio de Proyectos
-
-Haz clic en las carpetas para ver los trabajos detallados:
-
-### 🤖 [IA & Automatización](./ia-automatizacion)
-* **Automatización de Email Marketing:** Estrategia y flujos para "Los Ahoras".
-* **Sistema de Trazabilidad:** Consultoría operativa para el sector hostelería.
-* **Herramientas de Presupuesto:** Optimización financiera avanzada.
-
-### 🛡️ [Ciberseguridad & IT](./ciberseguridad)
-* **Auditoría NIST:** Gestión de riesgos y vulnerabilidades (Caso Botium Toys).
-* **Análisis de Redes:** Monitorización de tráfico con Wireshark y tcpdump.
-* **Soporte Técnico:** Administración de sistemas y software corporativo.
-
-### 👩‍💼 [Asistente Virtual & Operativa](./asistente-virtual)
-* **Protocolos de Onboarding:** Gestión de talento y bienvenida de colaboradores.
-* **Gestión de Eventos:** Planificación y comunicación estratégica.
-* **Análisis Personal:** [Mi Yo Interior](./asistente-virtual/CONOCER-MI-YO-INTERIOR.pdf) - Valores aplicados al trabajo.
+### 🤖 IA & Estrategia
+* **Asistente Virtual con IA:** [certificado_iqs_asistente_virtual.png](./certificado_iqs_asistente_virtual.png)
+* **Examen Magia para Consultora de IA:** [certificate-examen-magia-para-consultora-de-ia.png](./certificate-examen-magia-para-consultora-de-ia.png)
 
 ---
-
-## 🎓 Certificaciones Destacadas
-*(Todos los diplomas están disponibles en la carpeta [Certificados](./certificados))*
-
-* 🏆 **Consultora de IA** (IQS Executive, 120h)
-* 🛡️ **Ciberseguridad Profesional** (Google/Coursera)
-* 👩‍💻 **Asistente Virtual Certificada** (Mamis Digitales)
-* 📈 **Especialista en Marketing Digital e IA**
-
----
-
-## 🛠️ Stack Tecnológico
-`ChatGPT / Claude` `Make.com / n8n` `Wireshark` `Python` `Asana / Notion` `Google Workspace`
-
----
-
-## 📬 Contacto
-¿Hablamos sobre cómo puedo ayudar a tu organización?
-
-* 📧 **Email:** [conchialonsogarcia5@gmail.com](mailto:conchialonsogarcia5@gmail.com)
-* 🔗 **LinkedIn:** [conchi-alonso-garcia](https://www.linkedin.com/in/conchi-alonso-garcia)
-* 🏢 **Empresa:** [Alonso & Espinosa](https://www.alonsoespinosa.com/)
-
----
-<p align="center"><i>"La tecnología es el medio, la confianza es la base."</i></p>
+[⬅️ Volver al inicio](../README.md)
