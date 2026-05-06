@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #0f172a;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        font-family: 'Inter', sans-serif;
+      }
+      .bg-accent {
+        position: absolute;
+        top: -100px;
+        right: -100px;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(244, 63, 94, 0.15) 0%, transparent 70%);
+        border-radius: 50%;
+      }
+      .content-left {
+        width: 55%;
+        padding-left: 64px; /* slightly reduced, doesn't affect title top */
+        z-index: 2;
+      }
+      .content-right {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .image-wrapper {
+        width: 420px;
+        height: 420px; /* reduced from 450 -> moves image up to avoid overflow */
+        border-radius: 32px;
+        overflow: hidden;
+        border: 8px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+        transform: rotate(3deg);
+      }
+      .image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 32%;
+        transform: scale(1.45); /* reduced scale to prevent image protrusion */
+      }
+      .title-badge {
+        display: inline-block;
+        padding: 8px 20px;
+        background: rgba(244, 63, 94, 0.1);
+        border: 1px solid rgba(244, 63, 94, 0.3);
+        color: #f43f5e;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 24px;
+      }
+      h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 84px;
+        color: #f8fafc;
+        line-height: 1.1;
+        margin-bottom: 16px;
+      }
+      h2 {
+        font-size: 32px;
+        color: #38bdf8;
+        font-weight: 500;
+        margin-bottom: 40px;
+      }
+      .keywords {
+        display: flex;
+        gap: 30px;
+      }
+      .keyword {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #94a3b8;
+        font-size: 20px;
+      }
+      .keyword i {
+        color: #f43f5e;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="bg-accent"></div>
+        <div class="content-left">
+            <div class="title-badge">Portafolio Profesional</div>
+            <h1>Conchi<br>Alonso</h1>
+            <h2>Asistente Virtual Técnica &amp; Creativa</h2>
+            <div class="keywords">
+                <div class="keyword"><i class="fas fa-check-circle"></i> Orden</div>
+                <div class="keyword"><i class="fas fa-check-circle"></i> Creatividad</div>
+                <div class="keyword"><i class="fas fa-check-circle"></i> Tecnología</div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="image-wrapper">
+                <img src="/home/ubuntu/upload/pasted_file_op5ui9_image.png" alt="Conchi Alonso">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

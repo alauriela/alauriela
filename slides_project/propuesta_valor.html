@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #0f172a;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        font-family: 'Inter', sans-serif;
+      }
+      .content-left {
+        width: 50%;
+        padding-top: 60px; /* keep upper padding of the title */
+        padding-left: 80px;
+        z-index: 2;
+      }
+      .content-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .image-box {
+        width: 580px;
+        height: 360px; /* slightly reduced to improve vertical fit */
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      }
+      .image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .label {
+        font-size: 16px;
+        font-weight: 700;
+        color: #f43f5e;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 56px;
+        color: #f8fafc;
+        line-height: 1.2;
+        margin-bottom: 30px;
+      }
+      .quote {
+        font-size: 24px;
+        color: #94a3b8;
+        line-height: 1.6;
+        font-style: italic;
+        border-left: 4px solid #f43f5e;
+        padding-left: 30px;
+        padding-top: 10px;
+      }
+      .highlight {
+        color: #38bdf8;
+        font-weight: 700;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="content-left">
+            <div class="label">Propuesta de Valor</div>
+            <h2>Transformando el <span class="highlight">Caos</span> en Sistemas Eficientes</h2>
+            <div class="quote">
+                "Soy un perfil híbrido que une la organización del backstage administrativo con la vanguardia de la creación de contenido digital."
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="image-box">
+                <img src="/home/ubuntu/alauriela/slide_bg_order.png" alt="Orden y Claridad">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

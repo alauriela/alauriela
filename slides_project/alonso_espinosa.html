@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #0f172a;
+        padding-top: 80px;
+        padding-left: 100px;
+        padding-right: 100px;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+        position: relative;
+        overflow: hidden;
+      }
+      .label {
+        font-size: 16px;
+        font-weight: 700;
+        color: #38bdf8;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 24px;
+      }
+      h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 64px;
+        color: #f8fafc;
+        line-height: 1.1;
+        margin-bottom: 40px;
+      }
+      .quote-box {
+        border-left: 6px solid #f43f5e;
+        padding-left: 40px;
+        padding-top: 10px;
+        margin-bottom: 60px;
+      }
+      .quote-text {
+        font-size: 28px;
+        color: #f8fafc;
+        line-height: 1.5;
+        font-style: italic;
+        margin-bottom: 16px;
+      }
+      .quote-author {
+        font-size: 18px;
+        color: #94a3b8;
+        font-weight: 500;
+      }
+      .info-grid {
+        display: flex;
+        gap: 80px;
+      }
+      .info-block {
+        flex: 1;
+      }
+      .info-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #38bdf8;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .info-list {
+        list-style: none;
+        font-size: 18px;
+        color: #94a3b8;
+        line-height: 1.8;
+      }
+      .info-list li {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .info-list li::before {
+        content: "•";
+        color: #f43f5e;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="label">Consultoría Estratégica</div>
+        <h2>Alonso &amp; <span style="color: #f43f5e;">Espinosa</span></h2>
+        
+        <div class="quote-box">
+            <div class="quote-text">
+                "Ayudamos a pymes con alta carga operativa a recuperar orden y claridad en su día a día. Primero proceso. Tecnología solo si aporta."
+            </div>
+            <div class="quote-author">— Conchi Alonso &amp; Esperanza Espinosa</div>
+        </div>
+        
+        <div class="info-grid">
+            <div class="info-block">
+                <div class="info-title"><i class="fas fa-industry"></i> Sectores Clave</div>
+                <ul class="info-list">
+                    <li>Construcción e Ingeniería</li>
+                    <li>Hostelería y Restauración</li>
+                    <li>Sector Sanitario</li>
+                    <li>Energías Renovables</li>
+                </ul>
+            </div>
+            <div class="info-block">
+                <div class="info-title"><i class="fas fa-bullseye"></i> Nuestro Enfoque</div>
+                <ul class="info-list">
+                    <li>Diagnóstico de fricciones operativas</li>
+                    <li>Automatización estratégica de tareas</li>
+                    <li>Sistematización de procesos (SOPs)</li>
+                    <li>Optimización de la rentabilidad</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+{
+  "project_info": {
+    "title": "Conchi Alonso · Perfil Profesional",
+    "created": 1778002641.943491,
+    "last_updated": 1778002921.396794,
+    "total_slides": 9
+  },
+  "slides": [
+    {
+      "id": "portada",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "propuesta_valor",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "perfil_hibrido",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "servicios_clave",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "metodologia_magia",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "caso_exito",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "trayectoria_formacion",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "alonso_espinosa",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "contacto",
+      "state": "edited",
+      "pageNum": 9
+    }
+  ],
+  "outline": [
+    {
+      "id": "portada",
+      "title": "Conchi Alonso · Perfil Profesional",
+      "summary": "Portada con el nombre y el cargo principal de Conchi Alonso.",
+      "image_plan": "/home/ubuntu/upload/pasted_file_op5ui9_image.png - The slide is a cover slide and features the person's name and title. Image 1 is a professional headshot of Conchi Alonso, which is highly relevant for a cover slide.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "propuesta_valor",
+      "title": "Propuesta de Valor",
+      "summary": "Definición de la misión profesional: transformar el caos en sistemas eficientes.",
+      "image_plan": "/home/ubuntu/alauriela/slide_bg_order.png - The slide discusses transforming chaos into efficient systems. Image 3 visually represents this concept with a clean, organized desk setup and a graphic illustrating 'Transforming Chaos into Clarity' with elements like 'Disorder', 'Structure', 'Clarity', and 'Growth'.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "perfil_hibrido",
+      "title": "Perfil Híbrido: Gestión + IA",
+      "summary": "Explicación de la combinación única de gestión operativa y creatividad digital con IA.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "servicios_clave",
+      "title": "Servicios Clave",
+      "summary": "Tabla detallada de los servicios principales y sus beneficios.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "metodologia_magia",
+      "title": "Metodología M.A.G.I.A.",
+      "summary": "Descripción de la metodología estratégica para la implementación de IA.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "caso_exito",
+      "title": "Caso de Éxito: EcoLuz Doméstica",
+      "summary": "Ejemplo real de aplicación de IA en vídeo y voz.",
+      "image_plan": "/home/ubuntu/alauriela/slide_bg_tech.png - The slide describes a case study involving 'Innovación Audiovisual con IA' and mentions specific AI tools like 'Avatares Parlantes (Loomi)' and 'Clonación y Síntesis de Voz (ElevenLabs)'. Image 2, with its futuristic, interconnected globe and circuit board elements, visually represents AI and technology, which is highly relevant to the content of this slide.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "trayectoria_formacion",
+      "title": "Trayectoria y Formación",
+      "summary": "Resumen de la experiencia profesional y certificaciones clave.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "alonso_espinosa",
+      "title": "Alonso & Espinosa",
+      "summary": "Presentación de la consultoría operativa para pymes.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "contacto",
+      "title": "Contacto",
+      "summary": "Información de contacto y llamada a la acción final.",
+      "image_plan": "",
+      "slide_template_key": ""
+    }
+  ]
+}

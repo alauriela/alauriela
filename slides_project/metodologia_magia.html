@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #0f172a;
+        padding-top: 60px;
+        padding-left: 80px;
+        padding-right: 80px;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+        position: relative;
+        overflow: hidden;
+      }
+      .label {
+        font-size: 16px;
+        font-weight: 700;
+        color: #38bdf8;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 16px;
+      }
+      h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 52px;
+        color: #f8fafc;
+        line-height: 1.1;
+        margin-bottom: 40px;
+      }
+      /* Use a two-column layout to reduce vertical stacking */
+      .methodology-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 24px;
+        align-items: start;
+      }
+      .step {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        padding-top: 16px;
+        padding-left: 18px;
+        padding-right: 18px;
+        min-height: 100px;
+      }
+      .letter {
+        font-family: 'Playfair Display', serif;
+        font-size: 48px;
+        font-weight: 700;
+        color: #f43f5e;
+        line-height: 1;
+        width: 50px;
+        text-align: center;
+      }
+      .step-content {
+        flex: 1;
+      }
+      .step-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #f8fafc;
+        margin-bottom: 4px;
+      }
+      .step-desc {
+        font-size: 17px;
+        color: #94a3b8;
+        line-height: 1.5;
+      }
+      .accent-blue { color: #38bdf8; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="label">Estrategia IA</div>
+        <h2>Metodología <span class="accent-blue">M.A.G.I.A.</span></h2>
+        <div class="methodology-container">
+            <div class="step">
+                <div class="letter">M</div>
+                <div class="step-content">
+                    <div class="step-title">Medición e Identificación</div>
+                    <div class="step-desc">Análisis DAFO Ejecutivo para identificar cuellos de botella y oportunidades de automatización real.</div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="letter">A</div>
+                <div class="step-content">
+                    <div class="step-title">Arquitectura de Sistemas</div>
+                    <div class="step-desc">Diseño de flujos de trabajo optimizados integrando herramientas de IA y automatización sin fricciones.</div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="letter">G</div>
+                <div class="step-content">
+                    <div class="step-title">Gestión del Cambio</div>
+                    <div class="step-desc">Formación interna y acompañamiento de equipos para asegurar la adopción efectiva de las nuevas tecnologías.</div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="letter">I</div>
+                <div class="step-content">
+                    <div class="step-title">Implementación Ágil</div>
+                    <div class="step-desc">Despliegue iterativo de soluciones, priorizando aquellas con mayor impacto y menor tiempo de ejecución.</div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="letter">A</div>
+                <div class="step-content">
+                    <div class="step-title">Auditoría de Resultados</div>
+                    <div class="step-desc">Medición de métricas de adopción y ROI para garantizar que la tecnología cumple con los objetivos de negocio.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

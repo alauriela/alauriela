@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #0f172a;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        font-family: 'Inter', sans-serif;
+      }
+      .content-left {
+        width: 55%;
+        padding-top: 60px;
+        padding-left: 80px;
+        z-index: 2;
+      }
+      .content-right {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .image-frame {
+        width: 500px;
+        height: 500px;
+        border-radius: 32px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+      }
+      .image-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .label {
+        font-size: 16px;
+        font-weight: 700;
+        color: #f43f5e;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 52px;
+        color: #f8fafc;
+        line-height: 1.2;
+        margin-bottom: 40px;
+      }
+      .feature-list {
+        list-style: none;
+      }
+      .feature-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 12px; /* reduced to avoid vertical overflow */
+      }
+      .feature-icon {
+        width: 40px;
+        height: 40px;
+        background: rgba(56, 189, 248, 0.1);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #38bdf8;
+        font-size: 18px;
+        flex-shrink: 0;
+        padding-top: 2px;
+      }
+      .feature-text h4 {
+        font-size: 20px;
+        color: #f8fafc;
+        margin-bottom: 4px;
+        font-weight: 700;
+      }
+      .feature-text p {
+        font-size: 16px;
+        color: #94a3b8;
+        line-height: 1.5;
+      }
+      .highlight { color: #f43f5e; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="content-left">
+            <div class="label">Caso de Éxito</div>
+            <h2>EcoLuz Doméstica: <span class="highlight">Innovación</span> Audiovisual</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-user-tie"></i></div>
+                    <div class="feature-text">
+                        <h4>Avatares Parlantes (Loomi)</h4>
+                        <p>Explicaciones técnicas complejas mediante avatares con lip-sync natural y alta fidelidad.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-microphone-alt"></i></div>
+                    <div class="feature-text">
+                        <h4>Clonación de Voz (ElevenLabs)</h4>
+                        <p>Narraciones profesionales consistentes mediante síntesis de voz de última generación.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="feature-text">
+                        <h4>Contenido Vertical Optimizado</h4>
+                        <p>Edición estratégica para redes sociales, maximizando el alcance y el engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="image-frame">
+                <img src="/home/ubuntu/alauriela/slide_bg_tech.png" alt="Tecnología IA">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

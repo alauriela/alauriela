@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #0f172a;
+        padding-top: 60px;
+        padding-left: 80px;
+        padding-right: 80px;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+        position: relative;
+        overflow: hidden;
+      }
+      .label {
+        font-size: 16px;
+        font-weight: 700;
+        color: #f43f5e;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 16px;
+      }
+      h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 56px;
+        color: #f8fafc;
+        line-height: 1.1;
+        margin-bottom: 40px;
+      }
+      .columns {
+        display: flex;
+        gap: 60px;
+      }
+      .column {
+        flex: 1;
+      }
+      .section-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 24px;
+        padding-top: 10px;
+      }
+      .section-header i {
+        color: #38bdf8;
+        font-size: 24px;
+      }
+      .section-header h3 {
+        font-size: 24px;
+        color: #f8fafc;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .item {
+        margin-bottom: 24px;
+        border-left: 2px solid rgba(244, 63, 94, 0.3);
+        padding-left: 20px;
+        padding-top: 5px;
+      }
+      .item-date {
+        font-size: 14px;
+        font-weight: 700;
+        color: #f43f5e;
+        margin-bottom: 4px;
+      }
+      .item-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #f8fafc;
+        margin-bottom: 4px;
+      }
+      .item-subtitle {
+        font-size: 16px;
+        color: #38bdf8;
+        margin-bottom: 8px;
+      }
+      .item-desc {
+        font-size: 15px;
+        color: #94a3b8;
+        line-height: 1.5;
+      }
+      .cert-list {
+        list-style: none;
+      }
+      .cert-item {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 15px;
+        border-radius: 12px;
+      }
+      .cert-name {
+        font-weight: 700;
+        color: #f8fafc;
+        font-size: 18px;
+        margin-bottom: 4px;
+      }
+      .cert-org {
+        color: #38bdf8;
+        font-size: 14px;
+        padding-bottom: 15px;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="label">Trayectoria &amp; Formación</div>
+        <h2>Experiencia <span style="color: #f43f5e;">Sólida</span></h2>
+        
+        <div class="columns">
+            <div class="column">
+                <div class="section-header">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Experiencia</h3>
+                </div>
+                
+                <div class="item">
+                    <div class="item-date">2025 - ACTUALIDAD</div>
+                    <div class="item-title">Asistente Virtual &amp; Digital Support</div>
+                    <div class="item-subtitle">Freelance</div>
+                    <div class="item-desc">Soporte técnico y creativo especializado en IA y automatización.</div>
+                </div>
+                
+                <div class="item">
+                    <div class="item-date">2025 - ACTUALIDAD</div>
+                    <div class="item-title">Socia Fundadora</div>
+                    <div class="item-subtitle">Alonso &amp; Espinosa</div>
+                    <div class="item-desc">Consultoría operativa para pymes enfocada en eficiencia.</div>
+                </div>
+                
+                <div class="item">
+                    <div class="item-date">1995 - 2016</div>
+                    <div class="item-title">Responsable de Operaciones</div>
+                    <div class="item-subtitle">Sector Hostelería</div>
+                    <div class="item-desc">Gestión integral de equipos y procesos operativos complejos.</div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="section-header">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Formación Clave</h3>
+                </div>
+                
+                <ul class="cert-list">
+                    <li class="cert-item">
+                        <div class="cert-name">Consultora de IA</div>
+                        <div class="cert-org">IQS Executive (2026)</div>
+                    </li>
+                    <li class="cert-item">
+                        <div class="cert-name">Ciberseguridad Profesional</div>
+                        <div class="cert-org">Google / Coursera (2025)</div>
+                    </li>
+                    <li class="cert-item">
+                        <div class="cert-name">Marketing Digital &amp; E-commerce</div>
+                        <div class="cert-org">Google / Coursera (2025)</div>
+                    </li>
+                    <li class="cert-item">
+                        <div class="cert-name">Especialista en Shopify</div>
+                        <div class="cert-org">Formación Técnica (2024)</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

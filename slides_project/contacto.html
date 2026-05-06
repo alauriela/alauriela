@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #0f172a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Inter', sans-serif;
+        position: relative;
+        overflow: hidden;
+      }
+      .bg-glow {
+        position: absolute;
+        bottom: -150px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(244, 63, 94, 0.1) 0%, transparent 70%);
+        border-radius: 50%;
+      }
+      .label {
+        font-size: 16px;
+        font-weight: 700;
+        color: #38bdf8;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 24px;
+        padding-top: 20px;
+      }
+      h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 64px;
+        color: #f8fafc;
+        line-height: 1.1;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .cta-text {
+        font-size: 24px;
+        color: #94a3b8;
+        margin-bottom: 60px;
+        text-align: center;
+        max-width: 800px;
+      }
+      .contact-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        width: 1000px;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding-top: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
+        min-height: 80px;
+        min-width: 300px;
+        border-radius: 16px;
+      }
+      .contact-icon {
+        font-size: 24px;
+        color: #f43f5e;
+        width: 30px;
+        text-align: center;
+      }
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+      }
+      .contact-label {
+        font-size: 12px;
+        font-weight: 700;
+        color: #38bdf8;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .contact-value {
+        font-size: 18px;
+        color: #f8fafc;
+        font-weight: 500;
+      }
+      .footer-note {
+        margin-top: 60px;
+        font-size: 14px;
+        color: rgba(148, 163, 184, 0.5);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="bg-glow"></div>
+        <div class="label">Hablemos</div>
+        <h2>¿Listo para <span style="color: #f43f5e;">Optimizar</span> tu Negocio?</h2>
+        <p class="cta-text">Transformemos juntos el caos operativo en sistemas eficientes y escalables.</p>
+        
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-info">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">conchialonsogarcia5@gmail.com</span>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-calendar-alt"></i></div>
+                <div class="contact-info">
+                    <span class="contact-label">Agendar Llamada</span>
+                    <span class="contact-value">cal.eu/alonso-espinosa</span>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div class="contact-info">
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">conchi-alonso-garcia</span>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-globe"></i></div>
+                <div class="contact-info">
+                    <span class="contact-label">Web</span>
+                    <span class="contact-value">alauriela.github.io/alauriela</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-note">Conchi Alonso · Asistente Virtual Técnica &amp; Creativa</div>
+    </div>
+</body>
+</html>
