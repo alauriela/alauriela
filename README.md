@@ -82,7 +82,7 @@ Junto a Esperanza Espinosa, ayudamos a pymes con alta carga operativa a recupera
 | Canal | Datos |
 | :--- | :--- |
 | 📧 Email | conchialonsogarcia5@gmail.com |
-| 📞 Teléfono | 664 13 83 93 |
+| 📅 Agendar llamada | [Reserva aquí tu cita](https://www.cal.eu/alonso-espinosa/primera-conversacion-exploratoria?user=alonso-espinosa&duration=15&overlayCalendar=true) |
 | 💼 LinkedIn | [conchi-alonso-garcia](https://www.linkedin.com/in/conchi-alonso-garcia/) |
 | 🌐 Empresa | [alonsoespinosa.com](https://www.alonsoespinosa.com/) |
 | 📍 Ubicación | Barcelona · Remoto (España) |
