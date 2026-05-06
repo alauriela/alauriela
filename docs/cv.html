@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conchi Alonso · Curriculum Vitae</title>
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #f43f5e;
+            --accent-soft: rgba(244, 63, 94, 0.1);
+            --accent2: #38bdf8;
+            --light: #f8fafc;
+            --mid: #e2e8f0;
+            --text: #1e293b;
+            --muted: #64748b;
+            --white: #ffffff;
+            --card-bg: #ffffff;
+            --gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --shadow: 0 10px 30px -5px rgba(0,0,0,0.08);
+            --shadow-hover: 0 15px 40px -8px rgba(0,0,0,0.15);
+            --radius: 16px;
+            --radius-sm: 8px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--light);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .cv-container {
+            width: 210mm; /* A4 width */
+            min-height: 297mm; /* A4 height */
+            background: var(--white);
+            box-shadow: var(--shadow-hover);
+            border-radius: var(--radius);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .header-section {
+            background: var(--primary);
+            color: var(--white);
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .avatar-cv {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 25%; /* Ajustado para centrar la cara */
+            transform: scale(1.4); /* Zoom para que la cara sea la protagonista */
+            border: 4px solid var(--accent2);
+            flex-shrink: 0;
+        }
+
+        .header-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            line-height: 1.1;
+        }
+
+        .header-content h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: var(--accent2);
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px 30px;
+            font-size: 0.9rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        .contact-item i {
+            color: var(--accent);
+            font-size: 1rem;
+        }
+
+        .main-content {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .left-column {
+            width: 35%;
+            background: #f0f4f8;
+            padding: 30px;
+            color: var(--text);
+        }
+
+        .right-column {
+            width: 65%;
+            padding: 30px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 5px;
+        }
+
+        .section-title.light {
+            color: var(--primary);
+            border-color: var(--accent2);
+        }
+
+        .profile-summary {
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            background: var(--accent-soft);
+            color: var(--accent);
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+        }
+
+        .experience-item h3, .education-item h3 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .experience-item h4, .education-item h4 {
+            font-size: 0.95rem;
+            color: var(--accent);
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .experience-item p, .education-item p {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        .experience-item .date, .education-item .date {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .cert-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cert-list li {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+
+        .cert-list li strong {
+            color: var(--primary);
+        }
+
+        .cert-list li span {
+            color: var(--muted);
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            .cv-container {
+                box-shadow: none;
+                border-radius: 0;
+                width: 210mm;
+                min-height: 297mm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="header-section">
+            <img src="./foto-conchi.png" alt="Conchi Alonso" class="avatar-cv">
+            <div class="header-content">
+                <h1>Conchi Alonso</h1>
+                <h2>Asistente Virtual Técnica & Creativa</h2>
+                <div class="contact-info">
+                    <a href="mailto:conchialonsogarcia5@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i> conchialonsogarcia5@gmail.com
+                    </a>
+                    <a href="https://www.cal.eu/alonso-espinosa/primera-conversacion-exploratoria?user=alonso-espinosa&duration=15&overlayCalendar=true" target="_blank" class="contact-item">
+                        <i class="fas fa-calendar-alt"></i> Agendar Llamada
+                    </a>
+                    <a href="https://www.linkedin.com/in/conchi-alonso-garcia/" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i> conchi-alonso-garcia
+                    </a>
+                    <a href="https://alauriela.github.io/alauriela/" target="_blank" class="contact-item">
+                        <i class="fas fa-globe"></i> alauriela.github.io/alauriela
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="left-column">
+                <h3 class="section-title light">Perfil</h3>
+                <p class="profile-summary">
+                    Profesional híbrida con más de 20 años de experiencia en gestión operativa y una sólida especialización en Inteligencia Artificial, automatización de procesos y marketing digital. Mi misión es transformar el caos administrativo en sistemas eficientes y escalables, liberando tiempo y recursos para el crecimiento estratégico de pymes y emprendedores.
+                </p>
+
+                <h3 class="section-title light">Habilidades</h3>
+                <ul class="skills-list">
+                    <li>IA & Automatización</li>
+                    <li>Shopify & E-commerce</li>
+                    <li>Gestión Operativa</li>
+                    <li>Google Workspace</li>
+                    <li>Zapier / Make</li>
+                    <li>Ciberseguridad</li>
+                    <li>Creación de Contenido IA</li>
+                    <li>Sistematización de Procesos</li>
+                    <li>Gestión de Proyectos</li>
+                </ul>
+
+                <h3 class="section-title light">Formación Clave</h3>
+                <ul class="cert-list">
+                    <li><strong>Consultora de IA</strong> - IQS Executive (En curso 2026)</li>
+                    <li><strong>Ciberseguridad Profesional</strong> - Google / Coursera (2025)</li>
+                    <li><strong>Marketing Digital & E-commerce</strong> - Google / Coursera (2025)</li>
+                    <li><strong>Especialista en Shopify</strong> - Formación Técnica (2024)</li>
+                </ul>
+            </div>
+
+            <div class="right-column">
+                <h3 class="section-title">Experiencia Profesional</h3>
+                <div class="experience-item">
+                    <h3>Asistente Virtual & Digital Support</h3>
+                    <h4>Freelance</h4>
+                    <span class="date">2025 - Actualidad</span>
+                    <p>Soporte técnico y creativo especializado en IA, automatización y gestión de e-commerce para emprendedores y pymes.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Socia Fundadora</h3>
+                    <h4>Alonso & Espinosa</h4>
+                    <span class="date">2025 - Actualidad</span>
+                    <p>Consultoría operativa enfocada en la sistematización de procesos y mejora de la rentabilidad para empresas con alta carga administrativa.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Responsable de Operaciones</h3>
+                    <h4>Sector Hostelería</h4>
+                    <span class="date">1995 - 2016</span>
+                    <p>Más de 20 años liderando equipos y gestionando la operativa integral de negocios, optimizando recursos y procesos.</p>
+                </div>
+
+                <h3 class="section-title">Proyectos Destacados</h3>
+                <div class="experience-item">
+                    <h3>EcoLuz Doméstica</h3>
+                    <h4>Innovación Audiovisual con IA</h4>
+                    <p>Creación de contenido educativo con avatares de IA (Loomi) y clonación de voz (ElevenLabs) para formación técnica en eficiencia energética.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Sistematización Operativa</h3>
+                    <h4>Automatización de Procesos Internos</h4>
+                    <p>Diseño e implementación de flujos de trabajo automatizados con Make.com y Google Scripts, reduciendo el tiempo administrativo en un 40%.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
