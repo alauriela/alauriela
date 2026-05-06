@@ -250,1007 +250,700 @@
     .hero-avatar-wrap::after {
       content: '';
       position: absolute; inset: -4px;
-      border-radius: 50%;
-      background: var(--primary);
+      background: var(--primary); border-radius: 50%;
     }
     .hero-avatar {
       position: relative; z-index: 1;
-      width: 100%; height: 100%; border-radius: 50%;
-      object-fit: cover; 
-      object-position: center 32%; /* Ajustado para centrar la cara verticalmente */
-      transform: scale(1.6); /* Zoom mayor para que la cara sea la protagonista */
+      width: 100%; height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 32%;
+      transform: scale(1.6);
       border: 4px solid var(--primary);
-      transition: transform 0.5s ease;
     }
-    .hero-avatar:hover { transform: scale(1.7); }
-    .hero-avatar-placeholder {
-      position: relative; z-index: 1;
-      width: 100%; height: 100%; border-radius: 50%;
-      background: linear-gradient(135deg, #2d3561, #457b9d);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 5rem; border: 4px solid var(--primary);
+    .hero-tags {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem;
+      max-width: 400px;
     }
-    .hero-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }    .tag {
-      background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.9);
-      padding: 0.6rem 1.2rem; border-radius: 50px;
-      font-size: 0.85rem; font-weight: 500;
-      border: 1px solid rgba(255,255,255,0.15);
+    .hero-tag {
+      background: rgba(255,255,255,0.05);
       backdrop-filter: blur(8px);
-      transition: all 0.3s ease;
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 0.5rem 1rem; border-radius: 50px;
+      font-size: 0.85rem; color: var(--white);
+      display: flex; align-items: center; gap: 0.5rem;
     }
-    .tag:hover { background: rgba(255,255,255,0.15); transform: translateY(-2px); }
 
     /* ── SECTIONS ── */
     section { padding: 10rem 2rem; }
     .container { max-width: 1200px; margin: 0 auto; }
     .section-label {
-      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--accent);
-      margin-bottom: 0.75rem;
+      color: var(--accent); font-weight: 700; font-size: 0.85rem;
+      text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;
     }
     .section-title {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(2.2rem, 4vw, 3.2rem);
-      color: var(--primary); 
-      line-height: 1.1; 
-      margin-bottom: 1.5rem;
-      letter-spacing: -0.02em;
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--primary); margin-bottom: 1.5rem;
+      line-height: 1.2;
     }
     .section-subtitle {
-      font-size: 1.05rem; color: var(--muted); max-width: 600px;
-      margin-bottom: 3rem;
+      font-size: 1.1rem; color: var(--muted);
+      max-width: 600px; margin-bottom: 4rem;
     }
 
-    /* ── ABOUT ── */
-    .about-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 4rem; align-items: center;
-    }
-    .about-text p { color: var(--muted); margin-bottom: 1.25rem; font-size: 1.05rem; }
-    .about-highlights {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem;
-    }
-    .highlight-card {
-      background: var(--light); border-radius: var(--radius-sm);
-      padding: 1.25rem; border-left: 3px solid var(--accent);
-    }
-    .highlight-card h4 { font-size: 0.875rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem; }
-    .highlight-card p { font-size: 0.8rem; color: var(--muted); margin: 0; }
-
-    .about-visual {
-      display: flex; flex-direction: column; gap: 1rem;
-    }
-    .skill-group { 
-      background: var(--white); 
-      border-radius: var(--radius); 
-      padding: 2rem; 
-      box-shadow: var(--shadow); 
-      border: 1px solid var(--mid);
-      transition: transform 0.3s ease;
-    }
-    .skill-group:hover { transform: translateY(-5px); }
-    .skill-group-title {
-      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em;
-      text-transform: uppercase; color: var(--accent2); margin-bottom: 1rem;
-    }
-    .skill-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .skill-pill {
-      background: var(--light); color: var(--text);
-      padding: 0.35rem 0.85rem; border-radius: 50px;
-      font-size: 0.8rem; font-weight: 500;
-      border: 1px solid var(--mid);
-    }
-
-    /* ── PROJECTS ── */
-    .projects-section { background: var(--primary); }
-    .projects-section .section-title { color: white; }
-    .projects-section .section-subtitle { color: rgba(255,255,255,0.6); }
-    .projects-section .section-label { color: #ff6b7a; }
-
-    .projects-grid {
-      display: grid; grid-template-columns: repeat(2, 1fr);
+    /* ── SKILLS ── */
+    .skills-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
     }
-    .project-card {
-      background: var(--white);
+    .skill-card {
+      background: var(--white); padding: 2.5rem; border-radius: var(--radius);
+      box-shadow: var(--shadow); transition: all 0.4s;
       border: 1px solid var(--mid);
-      border-radius: var(--radius); 
-      padding: 3rem;
-      transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-      cursor: default;
-      position: relative; 
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      display: flex; 
-      flex-direction: column;
-      height: 100%;
     }
-    .project-card:hover { 
-      transform: translateY(-12px) scale(1.02); 
-      box-shadow: var(--shadow-hover);
-      border-color: var(--accent-soft);
+    .skill-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+    .skill-icon {
+      width: 60px; height: 60px; background: var(--accent-soft);
+      border-radius: 18px; display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; color: var(--accent); margin-bottom: 1.5rem;
     }
-    .project-card::before {
-      content: '';
-      position: absolute; top: 0; left: 0; right: 0; height: 4px;
-      background: var(--accent); transform: scaleX(0);
-      transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-      transform-origin: left;
+    .skill-card h3 { margin-bottom: 1rem; font-size: 1.25rem; }
+    .skill-list { list-style: none; }
+    .skill-list li {
+      display: flex; align-items: center; gap: 0.75rem;
+      margin-bottom: 0.75rem; color: var(--muted); font-size: 0.95rem;
     }
-    .project-card:hover { 
-      transform: translateY(-15px); 
-      box-shadow: var(--shadow-hover);
-      border-color: var(--accent-soft);
-    }
-    .project-card:hover::before { transform: scaleX(1); }
+    .skill-list li::before { content: '→'; color: var(--accent); font-weight: 700; }
 
-    .project-icon {
-      width: 64px; height: 64px; border-radius: 20px;
-      background: var(--light); 
-      display: flex; align-items: center; justify-content: center;
-      font-size: 2rem; margin-bottom: 1.5rem;
-      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
+    /* ── PROJECTS ── */
+    .projects-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 3rem;
     }
-    .project-card:hover .project-icon { transform: scale(1.1) rotate(5deg); }
-    .project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
-    .project-tag {
-      background: rgba(230,57,70,0.12); color: #c1121f;
-      padding: 0.2rem 0.6rem; border-radius: 50px;
-      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.04em;
-      border: 1px solid rgba(230,57,70,0.25);
-    }
-    .project-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.75rem; }
-    .project-card p { font-size: 0.875rem; color: var(--muted); line-height: 1.6; margin-bottom: 1.25rem; }
-    .project-card ul li { font-size: 0.875rem; color: var(--muted); }
-    .project-list { list-style: none; }
-    .project-list li {
-      font-size: 0.8rem; color: var(--muted);
-      padding: 0.3rem 0; border-bottom: 1px solid var(--mid);
-      display: flex; align-items: flex-start; gap: 0.5rem;
-    }
-    .project-list li::before { content: '→'; color: var(--accent); flex-shrink: 0; }
-
-    /* ── EXPERIENCE ── */
-    .timeline { position: relative; padding-left: 2rem; }
-    .timeline::before {
-      content: ''; position: absolute; left: 0; top: 0; bottom: 0;
-      width: 2px; background: var(--mid);
-    }
-    .timeline-item { position: relative; margin-bottom: 2.5rem; }
-    .timeline-item::before {
-      content: ''; position: absolute; left: -2.45rem; top: 0.4rem;
-      width: 16px; height: 16px; border-radius: 50%;
-      background: var(--white); border: 4px solid var(--accent);
-      box-shadow: 0 0 0 4px var(--light);
-      z-index: 1;
-    }
-    .timeline-date {
-      font-size: 0.75rem; font-weight: 700; color: var(--accent);
-      text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.25rem;
-    }
-    .timeline-title { font-size: 1.05rem; font-weight: 700; color: var(--primary); }
-    .timeline-company { font-size: 0.875rem; color: var(--accent2); font-weight: 500; margin-bottom: 0.75rem; }
-    .timeline-desc { font-size: 0.9rem; color: var(--muted); }
-
-    /* ── CERTIFICATIONS ── */
-    .certs-section { background: var(--light); }
-    .certs-featured {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 1.5rem; margin-bottom: 2rem;
-    }
-    .cert-card {
+    .project-card {
       background: var(--white); border-radius: var(--radius);
       overflow: hidden; box-shadow: var(--shadow);
-      transition: all 0.4s ease;
-      border: 1px solid var(--mid);
+      transition: all 0.4s; border: 1px solid var(--mid);
+      display: flex; flex-direction: column;
     }
-    .cert-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-8px); border-color: var(--accent-soft); }
-    .cert-card img {
-      width: 100%; height: 200px; object-fit: contain;
-      background: #f0f4f8; padding: 1rem;
+    .project-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+    .project-img {
+      width: 100%; height: 280px; object-fit: cover;
+      border-bottom: 1px solid var(--mid);
     }
-    .cert-info { padding: 1.25rem; }
-    .cert-info h4 { font-size: 0.95rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem; }
-    .cert-info p { font-size: 0.8rem; color: var(--muted); }
+    .project-content { padding: 2.5rem; flex-grow: 1; display: flex; flex-direction: column; }
+    .project-tag {
+      font-size: 0.75rem; font-weight: 700; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;
+    }
+    .project-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary); }
+    .project-card p { color: var(--muted); margin-bottom: 1.5rem; font-size: 0.95rem; }
+    .project-features {
+      display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem;
+    }
+    .feature-tag {
+      background: var(--light); padding: 0.35rem 0.85rem; border-radius: 50px;
+      font-size: 0.8rem; color: var(--text); border: 1px solid var(--mid);
+    }
 
-    .certs-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1rem;
+    /* ── EXPERIENCE & EDUCATION ── */
+    .timeline-grid {
+      display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 4rem;
     }
-    .cert-mini {
-      background: white; border-radius: var(--radius-sm);
-      padding: 1rem; box-shadow: var(--shadow);
-      display: flex; align-items: center; gap: 0.75rem;
+    .timeline-item {
+      position: relative; padding-left: 2.5rem; margin-bottom: 3rem;
     }
-    .cert-mini-icon {
-      width: 40px; height: 40px; border-radius: 8px;
-      background: linear-gradient(135deg, #457b9d, #1d3557);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.1rem; flex-shrink: 0;
+    .timeline-item::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: -3rem;
+      width: 2px; background: var(--mid);
     }
-    .cert-mini h5 { font-size: 0.8rem; font-weight: 700; color: var(--primary); line-height: 1.3; }
-    .cert-mini p { font-size: 0.7rem; color: var(--muted); margin: 0; }
+    .timeline-item:last-child::before { display: none; }
+    .timeline-dot {
+      position: absolute; left: -5px; top: 0.5rem;
+      width: 12px; height: 12px; background: var(--accent);
+      border-radius: 50%; border: 3px solid var(--white);
+      box-shadow: 0 0 0 4px var(--accent-soft);
+    }
+    .timeline-date {
+      font-size: 0.85rem; font-weight: 700; color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .timeline-content h3 { font-size: 1.25rem; margin-bottom: 0.25rem; }
+    .timeline-content h4 {
+      font-size: 1rem; color: var(--accent2); font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .timeline-content p { font-size: 0.95rem; color: var(--muted); }
+
+    .cert-card {
+      background: var(--white); padding: 1.5rem; border-radius: var(--radius-sm);
+      margin-bottom: 1.5rem; border: 1px solid var(--mid);
+      transition: all 0.3s;
+    }
+    .cert-card:hover { border-color: var(--accent); transform: translateX(10px); }
+    .cert-card h4 { font-size: 1rem; margin-bottom: 0.25rem; }
+    .cert-card p { font-size: 0.85rem; color: var(--muted); }
 
     /* ── EMPRESA ── */
-    .empresa-section { background: white; }
+    .empresa-section { background: var(--primary); color: var(--white); }
+    .empresa-section .section-title { color: var(--white); }
+    .empresa-section .section-subtitle { color: rgba(255,255,255,0.6); }
     .empresa-card {
-      background: var(--gradient); border-radius: var(--radius);
-      padding: 3rem; color: white; position: relative; overflow: hidden;
-    }
-    .empresa-card::before {
-      content: '';
-      position: absolute; top: -50%; right: -10%;
-      width: 400px; height: 400px;
-      background: radial-gradient(circle, rgba(230,57,70,0.2) 0%, transparent 70%);
-      border-radius: 50%;
+      background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius); padding: 4rem; position: relative; overflow: hidden;
     }
     .empresa-inner {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 3rem; align-items: center; position: relative; z-index: 1;
+      display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 4rem; align-items: center;
     }
-    .empresa-card h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem; margin-bottom: 1rem;
-    }
-    .empresa-card p { color: rgba(255,255,255,0.75); margin-bottom: 1.5rem; font-size: 1rem; }
-    .empresa-sectors { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+    .empresa-card h3 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1.5rem; }
+    .empresa-card p { font-size: 1.1rem; color: rgba(255,255,255,0.8); margin-bottom: 2rem; }
+    .empresa-sectors { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem; }
     .sector-tag {
-      background: rgba(255,255,255,0.1); color: white;
-      padding: 0.4rem 1rem; border-radius: 50px;
-      font-size: 0.8rem; font-weight: 500; border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.1); padding: 0.5rem 1.25rem; border-radius: 50px;
+      font-size: 0.9rem; border: 1px solid rgba(255,255,255,0.1);
     }
     .empresa-stats {
-      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
     }
-    .empresa-stat { text-align: center; }
-    .empresa-stat-num { font-size: 2.5rem; font-weight: 800; color: white; }
-    .empresa-stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.05em; }
+    .empresa-stat-num { font-size: 2.5rem; font-weight: 800; color: var(--accent2); }
+    .empresa-stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.5); text-transform: uppercase; }
 
     /* ── CONTACT ── */
     .contact-section { background: var(--light); }
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
-    .contact-info { display: flex; flex-direction: column; gap: 1.25rem; }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
+    }
     .contact-item {
-      display: flex; align-items: center; gap: 1rem;
-      background: white; padding: 1.25rem 1.5rem; border-radius: var(--radius-sm);
-      box-shadow: var(--shadow); text-decoration: none; color: var(--text);
-      transition: all 0.2s;
+      display: flex; align-items: center; gap: 1.5rem;
+      background: var(--white); padding: 2rem; border-radius: var(--radius-sm);
+      margin-bottom: 1.5rem; border: 1px solid var(--mid);
+      transition: all 0.3s; text-decoration: none; color: inherit;
     }
-    .contact-item:hover { transform: translateX(4px); box-shadow: var(--shadow-hover); }
+    .contact-item:hover { transform: translateX(10px); border-color: var(--accent); box-shadow: var(--shadow); }
     .contact-icon {
-      width: 44px; height: 44px; border-radius: 10px;
-      background: var(--light); display: flex; align-items: center; justify-content: center;
-      font-size: 1.2rem; flex-shrink: 0;
+      width: 50px; height: 50px; background: var(--accent-soft);
+      border-radius: 12px; display: flex; align-items: center; justify-content: center;
+      font-size: 1.25rem; color: var(--accent);
     }
-    .contact-item h4 { font-size: 0.8rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
-    .contact-item p { font-size: 0.95rem; font-weight: 500; color: var(--primary); margin: 0; }
-
+    .contact-item h4 { font-size: 0.9rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+    .contact-item p { font-size: 1.1rem; font-weight: 600; color: var(--primary); }
+    
     .contact-cta {
-      background: var(--gradient); border-radius: var(--radius);
-      padding: 2.5rem; color: white; text-align: center;
+      background: var(--gradient); color: var(--white);
+      padding: 4rem; border-radius: var(--radius); text-align: center;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
     }
-    .contact-cta h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.75rem; margin-bottom: 1rem;
-    }
-    .contact-cta p { color: rgba(255,255,255,0.75); margin-bottom: 2rem; }
-    .contact-cta .btn-primary { display: inline-flex; }
+    .contact-cta h3 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1.5rem; }
+    .contact-cta p { margin-bottom: 2.5rem; opacity: 0.8; max-width: 400px; }
 
     /* ── FOOTER ── */
     footer {
-      background: var(--primary); color: rgba(255,255,255,0.5);
-      padding: 2rem; text-align: center; font-size: 0.875rem;
+      padding: 4rem 2rem; background: var(--white); border-top: 1px solid var(--mid);
+      text-align: center; color: var(--muted); font-size: 0.9rem;
     }
-    footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
-    footer a:hover { color: white; }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 900px) {
-      .hero-inner, .about-grid, .empresa-inner, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .projects-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-      .certs-featured { grid-template-columns: 1fr; }
-      .hero-visual { order: -1; }
-      .nav-links { display: none; }
-      .nav-toggle { display: flex; }
-      .hero-stats { grid-template-columns: repeat(3, 1fr); }
-    }
-    @media (max-width: 600px) {
-      .hero { padding: 90px 1.25rem 3rem; }
-        section { padding: 8rem 2rem; }}
-      .about-highlights { grid-template-columns: 1fr; }
-      .hero-stats { grid-template-columns: 1fr; gap: 0.5rem; }
-      .empresa-stats { grid-template-columns: 1fr 1fr; }
-    }
+    footer a { color: var(--primary); text-decoration: none; font-weight: 600; margin: 0 0.5rem; }
 
     /* ── ANIMATIONS ── */
-    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .hero-inner, .timeline-grid, .empresa-inner, .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .hero { text-align: center; padding-top: 120px; }
+      .hero-subtitle, .hero-actions, .hero-stats { margin-left: auto; margin-right: auto; justify-content: center; }
+      .hero-visual { order: -1; }
+      .projects-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      section { padding: 6rem 1.5rem; }
+      .hero-title { font-size: 2.5rem; }
+      .empresa-card, .contact-cta { padding: 2.5rem 1.5rem; }
+      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+    }
   </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-brand">Conchi <span>Alonso</span></a>
-  <ul class="nav-links">
-    <li><a href="#sobre-mi">Sobre mí</a></li>
-    <li><a href="#proyectos">Proyectos</a></li>
-    <li><a href="#experiencia">Experiencia</a></li>
-    <li><a href="#certificaciones">Certificaciones</a></li>
-    <li><a href="#empresa">Empresa</a></li>
-    <li><a href="#contacto" class="nav-cta">Contactar</a></li>
-  </ul>
-  <div class="nav-toggle" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-content">
-      <div class="hero-badge">Disponible para proyectos</div>
-      <h1 class="hero-title">
-        Asistente Virtual<br/>
-        <span id="typed-text" style="font-style: italic; font-weight: 500; color: var(--accent);"></span>
-      </h1>
-      <p class="hero-subtitle">
-        Especializada en IA, automatización de procesos y gestión operativa. 
-        Transformo el caos administrativo en sistemas que funcionan solos.
-      </p>
-      <div class="hero-actions">
-        <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
-        <a href="./CV_Conchi_Alonso.pdf" target="_blank" class="btn-secondary">Descargar CV 📄</a>
-        <a href="./Presentacion_Conchi_Alonso.pdf" target="_blank" class="btn-secondary" style="border-color: var(--accent2); color: var(--accent2);">Ver Presentación 📽️</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-item">
-          <div class="stat-number">20+</div>
-          <div class="stat-label">Años experiencia</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">10+</div>
-          <div class="stat-label">Certificaciones</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">100%</div>
-          <div class="stat-label">Remoto</div>
-        </div>
-      </div>
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#" class="nav-brand">CONCHI<span>ALONSO</span></a>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#empresa">Empresa</a></li>
+      <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+    </ul>
+    <div class="nav-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
     </div>
-    <div class="hero-visual">
-      <div class="hero-avatar-wrap">
-        <img src="./foto-conchi.png" alt="Conchi Alonso García" class="hero-avatar" />
-      </div>
-      <div class="hero-tags">
-        <span class="tag">🤖 IA & Automatización</span>
-        <span class="tag">🛒 Shopify</span>
-        <span class="tag">📊 Google Workspace</span>
-        <span class="tag">🎙️ ElevenLabs</span>
-        <span class="tag">🔗 Zapier / Make</span>
-        <span class="tag">🛡️ Ciberseguridad</span>
-      </div>
-    </div>
-  </div>
-  <div class="scroll-indicator">
-    <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px;">Scroll</span>
-    <span>↓</span>
-  </div>
-</section>
+  </nav>
 
-<!-- SOBRE MÍ -->
-<section id="sobre-mi" data-aos="fade-up">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-text fade-in">
-        <div class="section-label">Sobre mí</div>
-        <h2 class="section-title">Orden, creatividad<br/>y tecnología al servicio<br/>de tu negocio</h2>
-        <p>
-          Soy un perfil híbrido que une la organización del <em>"backstage"</em> administrativo 
-          con la vanguardia de la creación de contenido digital. No solo pongo orden; 
-          aporto soluciones tecnológicas creativas que hacen que los negocios funcionen mejor.
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content" data-aos="fade-right">
+        <div class="hero-badge">Disponible para nuevos proyectos</div>
+        <h1 class="hero-title">
+          Hola, soy Conchi.<br/>
+          <span id="typed-text"></span>
+        </h1>
+        <p class="hero-subtitle">
+          Especializada en IA, automatización de procesos y gestión operativa. 
+          Transformo el caos administrativo en sistemas que funcionan solos.
         </p>
-        <p>
-          Especializada en sistematización de procesos, gestión de plataformas (Shopify/LMS) 
-          y uso de Inteligencia Artificial para vídeo y voz. Autodidacta, resolutiva y con 
-          sólida experiencia en gestión de equipos durante más de 20 años.
-        </p>
-        <p>
-          Actualmente también soy <strong>Socia Fundadora de Alonso & Espinosa</strong>, 
-          consultoría operativa para pymes donde aplicamos estos mismos principios a escala empresarial.
-        </p>
-        <div class="about-highlights">
-          <div class="highlight-card">
-            <h4>Perfil híbrido</h4>
-            <p>Gestión operativa + creatividad digital con IA</p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
+          <a href="./CV_Conchi_Alonso.pdf" target="_blank" class="btn-secondary">Descargar CV 📄</a>
+          <a href="./Presentacion_Conchi_Alonso.pdf" target="_blank" class="btn-secondary" style="border-color: var(--accent2); color: var(--accent2);">Ver Presentación 📽️</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Años experiencia</div>
           </div>
-          <div class="highlight-card">
-            <h4>Autodidacta</h4>
-            <p>Aprendizaje continuo en tecnologías emergentes</p>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Proyectos IA</div>
           </div>
-          <div class="highlight-card">
-            <h4>Remoto 100%</h4>
-            <p>Trabajo eficiente desde cualquier lugar de España</p>
-          </div>
-          <div class="highlight-card">
-            <h4>Resultados reales</h4>
-            <p>Procesos que funcionan sin depender de una sola persona</p>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Compromiso</div>
           </div>
         </div>
       </div>
-      <div class="about-visual fade-in">
-        <div class="skill-group">
-          <div class="skill-group-title">⚙️ Gestión & Productividad</div>
-          <div class="skill-pills">
-            <span class="skill-pill">Shopify</span>
-            <span class="skill-pill">Zapier</span>
-            <span class="skill-pill">Make</span>
-            <span class="skill-pill">Notion</span>
-            <span class="skill-pill">Google Workspace</span>
-            <span class="skill-pill">Canva</span>
-            <span class="skill-pill">Trello</span>
+      
+      <div class="hero-visual" data-aos="fade-left">
+        <div class="hero-avatar-wrap">
+          <img src="./avatar.png" alt="Conchi Alonso" class="hero-avatar" />
+        </div>
+        <div class="hero-tags">
+          <span class="hero-tag">🤖 IA & Automatización</span>
+          <span class="hero-tag">🛒 Shopify</span>
+          <span class="hero-tag">📊 Google Workspace</span>
+          <span class="hero-tag">🎙️ ElevenLabs</span>
+          <span class="hero-tag">🔗 Zapier / Make</span>
+          <span class="hero-tag">🛡️ Ciberseguridad</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Desliza</span>
+      <div style="width:1px; height:30px; background:white; opacity:0.3;"></div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" data-aos="fade-up">
+    <div class="container">
+      <div class="section-label">Lo que hago</div>
+      <h2 class="section-title">Servicios Especializados</h2>
+      <p class="section-subtitle">Soluciones técnicas y creativas diseñadas para optimizar tu tiempo y escalar tu negocio.</p>
+      
+      <div class="skills-grid">
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🤖</div>
+          <h3>IA & Automatización</h3>
+          <ul class="skill-list">
+            <li>Implementación de agentes IA</li>
+            <li>Automatización con Zapier/Make</li>
+            <li>Optimización de flujos de trabajo</li>
+            <li>Consultoría estratégica de IA</li>
+          </ul>
+        </div>
+        
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🛒</div>
+          <h3>E-commerce & Shopify</h3>
+          <ul class="skill-list">
+            <li>Configuración de tiendas Shopify</li>
+            <li>Gestión de catálogo y pedidos</li>
+            <li>Integración de apps y pagos</li>
+            <li>Soporte técnico especializado</li>
+          </ul>
+        </div>
+        
+        <div class="skill-card fade-in">
+          <div class="skill-icon">⚙️</div>
+          <h3>Gestión Operativa</h3>
+          <ul class="skill-list">
+            <li>Sistematización de procesos</li>
+            <li>Gestión de Google Workspace</li>
+            <li>Soporte administrativo técnico</li>
+            <li>Organización de proyectos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" style="background: var(--white);" data-aos="fade-up">
+    <div class="container">
+      <div class="section-label">Portafolio</div>
+      <h2 class="section-title">Proyectos Destacados</h2>
+      <p class="section-subtitle">Una muestra de cómo aplico la tecnología para resolver problemas reales.</p>
+      
+      <div class="projects-grid">
+        <!-- Proyecto 1 -->
+        <div class="project-card fade-in">
+          <img src="./proyectos/ecoluz.png" alt="EcoLuz Doméstica" class="project-img" />
+          <div class="project-content">
+            <div class="project-tag">IA Audiovisual</div>
+            <h3>EcoLuz Doméstica</h3>
+            <p>Innovación en contenido educativo mediante avatares de IA y clonación de voz para formación técnica.</p>
+            <div class="project-features">
+              <span class="feature-tag">Loomi AI</span>
+              <span class="feature-tag">ElevenLabs</span>
+              <span class="feature-tag">CapCut</span>
+            </div>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+              <a href="./proyectos/ecoluz-informe.pdf" target="_blank" class="btn-secondary">Ver Informe PDF 📄</a>
+              <a href="https://www.youtube.com/watch?v=ejemplo" target="_blank" class="btn-secondary">Ver Vídeo IA 🎬</a>
+            </div>
           </div>
         </div>
-        <div class="skill-group">
-          <div class="skill-group-title">🤖 IA & Creatividad Digital</div>
-          <div class="skill-pills">
-            <span class="skill-pill">ElevenLabs</span>
-            <span class="skill-pill">HeyGen / Loomi</span>
-            <span class="skill-pill">Prompt Engineering</span>
-            <span class="skill-pill">CapCut</span>
-            <span class="skill-pill">ChatGPT</span>
-            <span class="skill-pill">Midjourney</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <div class="skill-group-title">🛡️ Ciberseguridad & Admin</div>
-          <div class="skill-pills">
-            <span class="skill-pill">Gestión de Riesgos</span>
-            <span class="skill-pill">Seguridad de Redes</span>
-            <span class="skill-pill">Linux</span>
-            <span class="skill-pill">SQL</span>
-            <span class="skill-pill">VeriFactu</span>
-            <span class="skill-pill">SOPs</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <div class="skill-group-title">📋 E-commerce & LMS</div>
-          <div class="skill-pills">
-            <span class="skill-pill">Shopify</span>
-            <span class="skill-pill">Kajabi</span>
-            <span class="skill-pill">E-commerce UX</span>
-            <span class="skill-pill">Pasarelas de pago</span>
+
+        <!-- Proyecto 2 -->
+        <div class="project-card fade-in">
+          <img src="./proyectos/automatizacion.png" alt="Automatización de Procesos" class="project-img" />
+          <div class="project-content">
+            <div class="project-tag">Eficiencia</div>
+            <h3>Sistematización Operativa</h3>
+            <p>Reducción del 40% en tiempo administrativo mediante la creación de SOPs y automatizaciones personalizadas.</p>
+            <div class="project-features">
+              <span class="feature-tag">Make.com</span>
+              <span class="feature-tag">Notion</span>
+              <span class="feature-tag">Google Scripts</span>
+            </div>
+            <a href="./proyectos/caso-exito-automatizacion.pdf" target="_blank" class="btn-secondary">Caso de Éxito 📄</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROYECTOS -->
-<section id="proyectos" class="projects-section" data-aos="fade-up">
-  <div class="container">
-    <div class="section-label">Proyectos destacados</div>
-    <h2 class="section-title">Trabajo real,<br/>resultados medibles</h2>
-    <p class="section-subtitle">Proyectos que demuestran la combinación de gestión operativa, creatividad digital e inteligencia artificial.</p>
-    <div class="projects-grid">
-
-      <!-- NUEVO: Caso Práctico IA -->
-      <div class="project-card fade-in" style="border-top: 4px solid var(--accent);">
-        <div class="project-icon">🧠</div>
-        <div class="project-tags">
-          <span class="project-tag">Consultoría IA</span>
-          <span class="project-tag">Estrategia</span>
-        </div>
-        <h3>Metodología M.A.G.I.A.</h3>
-        <p>Implementación de consultoría estratégica de IA para optimización de procesos internos y formación de equipos.</p>
-        <ul style="margin-top:1rem; font-size:0.875rem; color:var(--muted); padding-left:1.2rem; margin-bottom:1.5rem;">
-          <li>Análisis DAFO Ejecutivo para toma de decisiones</li>
-          <li>Diseño de formación interna en herramientas de IA</li>
-          <li>Informes de satisfacción y métricas de adopción</li>
-        </ul>
-        <a href="https://drive.google.com/file/d/1XhigSJ8PB_KtQzpcgGXNZVfDr43nxRyn/view?usp=sharing" target="_blank" class="btn-secondary">Ver Informe DAFO →</a>
-      </div>
-
-      <!-- NUEVO: Gestión Comercial -->
-      <div class="project-card fade-in" style="border-top: 4px solid var(--accent2);">
-        <div class="project-icon">📈</div>
-        <div class="project-tags">
-          <span class="project-tag">Gestión Leads</span>
-          <span class="project-tag">Automatización</span>
-        </div>
-        <h3>Optimización Comercial</h3>
-        <p>Sistemas de priorización de clientes y automatización de flujos de seguimiento para maximizar conversiones.</p>
-        <ul style="margin-top:1rem; font-size:0.875rem; color:var(--muted); padding-left:1.2rem; margin-bottom:1.5rem;">
-          <li>Matriz de priorización de leads (Angelorum Joies)</li>
-          <li>Automatización de emails de seguimiento post-contacto</li>
-          <li>Guiones de presentación comercial estratégica</li>
-        </ul>
-        <a href="https://drive.google.com/file/d/1uVldg7GggWDNN7WoWRDlqC8kwMJ9KKX1/view?usp=sharing" target="_blank" class="btn-secondary">Ver Matriz Leads →</a>
-      </div>
-
-      <div class="project-card fade-in">
-        <div class="project-icon">🌿</div>
-        <div class="project-tags">
-          <span class="project-tag">IA & Creatividad</span>
-          <span class="project-tag">Video Marketing</span>
-        </div>
-        <h3>Proyecto EcoLuz Doméstica</h3>
-        <p>Creación integral de la identidad visual y audiovisual de un proyecto de energía solar utilizando herramientas de IA de última generación.</p>
-        <ul style="margin-top:1rem; font-size:0.875rem; color:var(--muted); padding-left:1.2rem; margin-bottom:1.5rem;">
-          <li>Avatares parlantes con Loomi para explicaciones técnicas con lip-sync natural</li>
-          <li>Clonación y síntesis de voz con ElevenLabs para narraciones de vídeo</li>
-          <li>Edición de vídeo vertical optimizado para redes sociales</li>
-          <li>Prompts avanzados para generación de imágenes de marca</li>
-        </ul>
-        <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1rem;">
-          <a href="https://drive.google.com/file/d/1taP4ib4ekARhbq1Da7qTYHPrg11g-ZYM/view?usp=sharing" target="_blank" class="btn-secondary">Video 1 (Avatar) →</a>
-          <a href="https://drive.google.com/file/d/1nyEI2kBeQqq_-kqUIXszlKB8zmedpukH/view?usp=sharing" target="_blank" class="btn-secondary">Video 2 (Voz IA) →</a>
-          <a href="https://drive.google.com/file/d/1Fx9YMxFEEYygw3uuTw4THM_c1p6as3NG/view?usp=sharing" target="_blank" class="btn-secondary">Video 3 (Edición) →</a>
-          <a href="https://drive.google.com/file/d/1npN-crQqmhBzpvFH_oP08xjx2syxWdV1/view?usp=sharing" target="_blank" class="btn-secondary">Video 4 (Final) →</a>
-        </div>
-      </div>
-
-      <div class="project-card fade-in">
-        <div class="project-icon">👥</div>
-        <div class="project-tags">
-          <span class="project-tag">Gestión</span>
-          <span class="project-tag">Legal/Admin</span>
-        </div>
-        <h3>Asistentes Virtuales en Acción</h3>
-        <p>Coordinación y estandarización de procesos internos para una comunidad profesional de asistentes virtuales.</p>
-        <ul class="project-list">
-          <li>Manuales de Bienvenida y Procedimientos Operativos Estándar (SOPs)</li>
-          <li>Guías de Adaptación Legal VeriFactu 2025 y Bonificaciones Fundae</li>
-          <li>Estrategia de contenidos LinkedIn/Facebook con tono corporativo</li>
-        </ul>
-      </div>
-
-      <div class="project-card fade-in">
-        <div class="project-icon">🛁</div>
-        <div class="project-tags">
-          <span class="project-tag">Shopify</span>
-          <span class="project-tag">E-commerce</span>
-        </div>
-        <h3>Bath EcoShop</h3>
-        <p>Configuración completa de tienda online con gestión de productos, pasarelas de pago y experiencia de usuario optimizada.</p>
-        <ul class="project-list">
-          <li>Configuración completa de tienda Shopify con catálogo de productos</li>
-          <li>Integración de pasarelas de pago y optimización de UX</li>
-          <li>Lógica transferible a plataformas LMS como Kajabi</li>
-        </ul>
-      </div>
-
-      <div class="project-card fade-in">
-        <div class="project-icon">📅</div>
-        <div class="project-tags">
-          <span class="project-tag">Gestión de Eventos</span>
-          <span class="project-tag">Estrategia</span>
-        </div>
-        <h3>Planificación MWC Barcelona 2026</h3>
-        <p>Simulación profesional completa de planificación estratégica para el Mobile World Congress 2026 en Barcelona.</p>
-        <ul class="project-list">
-          <li>Propuesta de patrocinio con paquetes de inversión y análisis de público</li>
-          <li>Evaluación técnica de recintos, presupuestos y contingencias</li>
-          <li>Cronogramas de montaje, desmontaje y coordinación operativa</li>
-        </ul>
-      </div>
-
-      <div class="project-card fade-in">
-        <div class="project-icon">📊</div>
-        <div class="project-tags">
-          <span class="project-tag">Análisis</span>
-          <span class="project-tag">IA Operativa</span>
-        </div>
-        <h3>Control Administrativo & IA</h3>
-        <p>Sistema de herramientas digitales para la toma de decisiones basada en datos, optimizadas para procesamiento con inteligencia artificial.</p>
-        <ul class="project-list">
-          <li>Control de ingresos/gastos con categorías profesionales</li>
-          <li>Benchmarking sectorial y prospección comercial</li>
-          <li>Matrices de análisis comercial estructuradas para IA</li>
-        </ul>
-      </div>
-
-      <div class="project-card fade-in">
-        <div class="project-icon">🛡️</div>
-        <div class="project-tags">
-          <span class="project-tag">Ciberseguridad</span>
-          <span class="project-tag">Google</span>
-        </div>
-        <h3>Especialización en Ciberseguridad</h3>
-        <p>Formación técnica completa en ciberseguridad a través del programa profesional de Google en Coursera, con 7 certificaciones especializadas.</p>
-        <ul class="project-list">
-          <li>Gestión de riesgos y seguridad de redes</li>
-          <li>Detección, respuesta y control de activos</li>
-          <li>Linux y SQL aplicados a la ciberseguridad</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCIA -->
-<section id="experiencia" data-aos="fade-up">
-  <div class="container">
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start;">
-      <div class="fade-in">
-        <div class="section-label">Trayectoria</div>
-        <h2 class="section-title">Experiencia profesional</h2>
-        <p class="section-subtitle">Más de 20 años de experiencia combinando gestión operativa y tecnología.</p>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-date">2025 – Actualidad</div>
-            <div class="timeline-title">Asistente Virtual & Digital Support</div>
-            <div class="timeline-company">Freelance · Remoto</div>
-            <div class="timeline-desc">Soporte operativo remoto para emprendedores y PYMES. Auditoría de procesos digitales, gestión de correo/agenda e implementación de herramientas de productividad (Notion, Trello).</div>
+  <!-- EXPERIENCIA -->
+  <section id="experiencia" data-aos="fade-up">
+    <div class="container">
+      <div class="section-label">Trayectoria</div>
+      <h2 class="section-title">Experiencia & Formación</h2>
+      
+      <div class="timeline-grid">
+        <div class="experience-col">
+          <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2025 - Actualidad</div>
+            <div class="timeline-content">
+              <h3>Asistente Virtual & Digital Support</h3>
+              <h4>Freelance</h4>
+              <p>Soporte técnico y creativo especializado en IA, automatización y gestión de e-commerce para emprendedores y pymes.</p>
+            </div>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2025 – Actualidad</div>
-            <div class="timeline-title">Socia Fundadora · Consultoría Operativa</div>
-            <div class="timeline-company">Alonso & Espinosa · Barcelona</div>
-            <div class="timeline-desc">Diagnóstico de fricciones operativas y automatización estratégica para pymes en sectores de construcción, hostelería, sanitario y energías renovables.</div>
+          
+          <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2025 - Actualidad</div>
+            <div class="timeline-content">
+              <h3>Socia Fundadora</h3>
+              <h4>Alonso & Espinosa</h4>
+              <p>Consultoría operativa enfocada en la sistematización de procesos y mejora de la rentabilidad para empresas con alta carga administrativa.</p>
+            </div>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-date">1995 – 2016</div>
-            <div class="timeline-title">Responsable de Operaciones y Equipos</div>
-            <div class="timeline-company">Sector Hostelería</div>
-            <div class="timeline-desc">Gestión integral de negocio: contratación, formación de personal y resolución de incidencias en tiempo real. Atención al cliente de alto volumen y control de stock, facturación y relaciones con proveedores.</div>
+
+          <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">1995 - 2016</div>
+            <div class="timeline-content">
+              <h3>Responsable de Operaciones</h3>
+              <h4>Sector Hostelería</h4>
+              <p>Más de 20 años liderando equipos y gestionando la operativa integral de negocios, optimizando recursos y procesos.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="fade-in">
-        <div class="section-label">Formación</div>
-        <h2 class="section-title">Educación continua</h2>
-        <p class="section-subtitle">Aprendizaje constante en las tecnologías más demandadas del mercado digital.</p>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-date">2026</div>
-            <div class="timeline-title">Consultora de IA (120h)</div>
-            <div class="timeline-company">IQS Executive · Barcelona</div>
-            <div class="timeline-desc">Programa avanzado de consultoría en inteligencia artificial aplicada a negocios.</div>
+
+        <div class="education-col">
+          <div class="cert-card fade-in">
+            <h4>Consultora de IA</h4>
+            <p>IQS Executive (En curso 2026)</p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2025</div>
-            <div class="timeline-title">Asistente Virtual Pro</div>
-            <div class="timeline-company">Mamis Digitales</div>
-            <div class="timeline-desc">Certificación profesional en asistencia virtual con especialización en herramientas digitales y gestión remota.</div>
+          <div class="cert-card fade-in">
+            <h4>Ciberseguridad Profesional</h4>
+            <p>Google / Coursera (2025)</p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2025</div>
-            <div class="timeline-title">Marketing Digital & E-commerce</div>
-            <div class="timeline-company">Google / Coursera</div>
-            <div class="timeline-desc">Especialización en marketing digital, estrategia de contenidos y comercio electrónico.</div>
+          <div class="cert-card fade-in">
+            <h4>Marketing Digital & E-commerce</h4>
+            <p>Google / Coursera (2025)</p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2022–2025</div>
-            <div class="timeline-title">Ciberseguridad (7 certificados)</div>
-            <div class="timeline-company">Google / Coursera</div>
-            <div class="timeline-desc">Programa completo de ciberseguridad: riesgos, redes, Linux, SQL, detección y respuesta a incidentes.</div>
+          <div class="cert-card fade-in">
+            <h4>Especialista en Shopify</h4>
+            <p>Formación Técnica (2024)</p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2022</div>
-            <div class="timeline-title">Soporte de TI Profesional</div>
-            <div class="timeline-company">Google / Coursera</div>
-            <div class="timeline-desc">Certificado profesional en soporte técnico de TI y administración de sistemas.</div>
+          
+          <div style="margin-top: 3rem;">
+            <h4 style="margin-bottom: 1.5rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);">Otras Certificaciones Google</h4>
+            <div class="cert-mini">
+              <div class="cert-mini-icon">🛡️</div>
+              <div>
+                <h5>Gestión de Riesgos</h5>
+                <p>Google / Coursera</p>
+              </div>
+            </div>
+            <div class="cert-mini">
+              <div class="cert-mini-icon">⚙️</div>
+              <div>
+                <h5>Controles de Seguridad</h5>
+                <p>Google / Coursera</p>
+              </div>
+            </div>
+            <div class="cert-mini">
+              <div class="cert-mini-icon">🐧</div>
+              <div>
+                <h5>Linux y SQL</h5>
+                <p>Google / Coursera</p>
+              </div>
+            </div>
+            <div class="cert-mini">
+              <div class="cert-mini-icon">💻</div>
+              <div>
+                <h5>Soporte de TI Profesional</h5>
+                <p>Google / Coursera</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CERTIFICACIONES -->
-<section id="certificaciones" class="certs-section" data-aos="fade-up">
-  <div class="container">
-    <div class="section-label">Acreditaciones</div>
-    <h2 class="section-title">Certificaciones & Diplomas</h2>
-    <p class="section-subtitle">Formación técnica acreditada en IA, ciberseguridad y gestión operativa.</p>
-
-    <div class="certs-featured fade-in">
-      <div class="cert-card">
-        <img src="./certificados/certificado_iqs_consultora_de_ia.png" alt="Consultora de IA - IQS Executive" />
-        <div class="cert-info">
-          <h4>Consultora de IA (120h)</h4>
-          <p>IQS Executive · 2026</p>
-        </div>
-      </div>
-      <div class="cert-card">
-        <img src="./certificados/certificado-av-mamis-digitales.png" alt="Asistente Virtual - Mamis Digitales" />
-        <div class="cert-info">
-          <h4>Asistente Virtual Certificada</h4>
-          <p>Mamis Digitales · 2025</p>
+  <!-- EMPRESA -->
+  <section id="empresa" class="empresa-section" data-aos="fade-up">
+    <div class="container">
+      <div class="section-label">Mi empresa</div>
+      <h2 class="section-title">Alonso & Espinosa</h2>
+      <p class="section-subtitle">Consultoría operativa para pymes que quieren recuperar el control de su negocio.</p>
+      <div class="empresa-card fade-in">
+        <div class="empresa-inner">
+          <div>
+            <h3>Consultoría Operativa<br/>para Pymes</h3>
+            <p>
+              Junto a Esperanza Espinosa, ayudamos a pymes con alta carga operativa a recuperar 
+              orden y claridad en su día a día. Primero proceso. Tecnología solo si aporta.
+            </p>
+            <div class="empresa-sectors">
+              <span class="sector-tag">🏗️ Construcción</span>
+              <span class="sector-tag">🍽️ Hostelería</span>
+              <span class="sector-tag">🏥 Sanitario</span>
+              <span class="sector-tag">☀️ Energías Renovables</span>
+            </div>
+            <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+              <a href="https://www.alonsoespinosa.com/" target="_blank" class="btn-primary">
+                Visitar alonsoespinosa.com →
+              </a>
+              <a href="https://www.linkedin.com/company/alonso-espinosa/" target="_blank" class="btn-secondary" style="background:rgba(255,255,255,0.1);color:white;border:1px solid rgba(255,255,255,0.2);">
+                LinkedIn empresa
+              </a>
+            </div>
+          </div>
+          <div class="empresa-stats">
+            <div class="empresa-stat">
+              <div class="empresa-stat-num">35+</div>
+              <div class="empresa-stat-label">Años experiencia combinada</div>
+            </div>
+            <div class="empresa-stat">
+              <div class="empresa-stat-num">4</div>
+              <div class="empresa-stat-label">Sectores especializados</div>
+            </div>
+            <div class="empresa-stat">
+              <div class="empresa-stat-num">10</div>
+              <div class="empresa-stat-label">Días primer diagnóstico</div>
+            </div>
+            <div class="empresa-stat">
+              <div class="empresa-stat-num">0€</div>
+              <div class="empresa-stat-label">Sin compromiso inicial</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="certs-grid fade-in">
-      <div class="cert-mini">
-        <div class="cert-mini-icon">🛡️</div>
-        <div>
-          <h5>Gestión de Riesgos</h5>
-          <p>Google / Coursera</p>
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact-section" data-aos="fade-up">
+    <div class="container">
+      <div class="section-label">Contacto</div>
+      <h2 class="section-title">¿Hablamos?</h2>
+      <p class="section-subtitle">Disponible para proyectos de asistencia virtual, automatización, IA y consultoría operativa.</p>
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <div class="contact-item" onclick="copyToClipboard('conchialonsogarcia5@gmail.com', this)" style="cursor:pointer;">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>conchialonsogarcia5@gmail.com</p>
+            </div>
+          </div>
+          <a href="https://www.cal.eu/alonso-espinosa/primera-conversacion-exploratoria?user=alonso-espinosa&duration=15&overlayCalendar=true" target="_blank" class="contact-item" style="text-decoration: none;">
+            <div class="contact-icon">📅</div>
+            <div class="contact-info">
+              <h3>Agendar Llamada</h3>
+              <p>Reserva una sesión de 15 min</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/conchi-alonso-garcia/" target="_blank" class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/in/conchi-alonso-garcia</p>
+            </div>
+          </a>
+          <a href="https://github.com/alauriela" target="_blank" class="contact-item">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <h4>GitHub</h4>
+              <p>github.com/alauriela</p>
+            </div>
+          </a>
+          <a href="https://www.alonsoespinosa.com/" target="_blank" class="contact-item">
+            <div class="contact-icon">🌐</div>
+            <div>
+              <h4>Empresa</h4>
+              <p>alonsoespinosa.com</p>
+            </div>
+          </a>
         </div>
-      </div>
-      <div class="cert-mini">
-        <div class="cert-mini-icon">🌐</div>
-        <div>
-          <h5>Seguridad de Redes</h5>
-          <p>Google / Coursera</p>
-        </div>
-      </div>
-      <div class="cert-mini">
-        <div class="cert-mini-icon">🔐</div>
-        <div>
-          <h5>Fundamentos de Ciberseguridad</h5>
-          <p>Google / Coursera</p>
-        </div>
-      </div>
-      <div class="cert-mini">
-        <div class="cert-mini-icon">🔍</div>
-        <div>
-          <h5>Detección y Respuesta</h5>
-          <p>Google / Coursera</p>
-        </div>
-      </div>
-      <div class="cert-mini">
-        <div class="cert-mini-icon">🔑</div>
-        <div>
-          <h5>Activos e Identidades</h5>
-          <p>Google / Coursera</p>
-        </div>
-      </div>
-      <div class="cert-mini">
-        <div class="cert-mini-icon">⚙️</div>
-        <div>
-          <h5>Controles de Seguridad</h5>
-          <p>Google / Coursera</p>
-        </div>
-      </div>
-      <div class="cert-mini">
-        <div class="cert-mini-icon">🐧</div>
-        <div>
-          <h5>Linux y SQL</h5>
-          <p>Google / Coursera</p>
-        </div>
-      </div>
-      <div class="cert-mini">
-        <div class="cert-mini-icon">💻</div>
-        <div>
-          <h5>Soporte de TI Profesional</h5>
-          <p>Google / Coursera</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EMPRESA -->
-<section id="empresa" class="empresa-section" data-aos="fade-up">
-  <div class="container">
-    <div class="section-label">Mi empresa</div>
-    <h2 class="section-title">Alonso & Espinosa</h2>
-    <p class="section-subtitle">Consultoría operativa para pymes que quieren recuperar el control de su negocio.</p>
-    <div class="empresa-card fade-in">
-      <div class="empresa-inner">
-        <div>
-          <h3>Consultoría Operativa<br/>para Pymes</h3>
+        <div class="contact-cta fade-in">
+          <h3>¿Necesitas orden<br/>en tu operativa?</h3>
           <p>
-            Junto a Esperanza Espinosa, ayudamos a pymes con alta carga operativa a recuperar 
-            orden y claridad en su día a día. Primero proceso. Tecnología solo si aporta.
+            Si buscas una asistente virtual técnica y creativa que combine gestión, 
+            automatización e inteligencia artificial, estamos en el lugar correcto.
           </p>
-          <div class="empresa-sectors">
-            <span class="sector-tag">🏗️ Construcción</span>
-            <span class="sector-tag">🍽️ Hostelería</span>
-            <span class="sector-tag">🏥 Sanitario</span>
-            <span class="sector-tag">☀️ Energías Renovables</span>
-          </div>
-          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
-            <a href="https://www.alonsoespinosa.com/" target="_blank" class="btn-primary">
-              Visitar alonsoespinosa.com →
-            </a>
-            <a href="https://www.linkedin.com/company/alonso-espinosa/" target="_blank" class="btn-secondary" style="background:rgba(255,255,255,0.1);color:white;border:1px solid rgba(255,255,255,0.2);">
-              LinkedIn empresa
-            </a>
-          </div>
-        </div>
-        <div class="empresa-stats">
-          <div class="empresa-stat">
-            <div class="empresa-stat-num">35+</div>
-            <div class="empresa-stat-label">Años experiencia combinada</div>
-          </div>
-          <div class="empresa-stat">
-            <div class="empresa-stat-num">4</div>
-            <div class="empresa-stat-label">Sectores especializados</div>
-          </div>
-          <div class="empresa-stat">
-            <div class="empresa-stat-num">10</div>
-            <div class="empresa-stat-label">Días primer diagnóstico</div>
-          </div>
-          <div class="empresa-stat">
-            <div class="empresa-stat-num">0€</div>
-            <div class="empresa-stat-label">Sin compromiso inicial</div>
-          </div>
+          <a href="mailto:conchialonsogarcia5@gmail.com" class="btn-primary">
+            Enviar mensaje →
+          </a>
+          <br/><br/>
+          <p style="font-size:0.85rem; opacity:0.6;">Barcelona · Remoto · España</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CONTACTO -->
-<section id="contacto" class="contact-section" data-aos="fade-up">
-  <div class="container">
-    <div class="section-label">Contacto</div>
-    <h2 class="section-title">¿Hablamos?</h2>
-    <p class="section-subtitle">Disponible para proyectos de asistencia virtual, automatización, IA y consultoría operativa.</p>
-    <div class="contact-grid">
-      <div class="contact-info fade-in">
-        <div class="contact-item" onclick="copyToClipboard('conchialonsogarcia5@gmail.com', this)" style="cursor:pointer;">
-          <div class="contact-icon">✉️</div>
-          <div>
-            <h4>Email</h4>
-            <p>conchialonsogarcia5@gmail.com</p>
-          </div>
-        </div>
-        <a href="https://www.cal.eu/alonso-espinosa/primera-conversacion-exploratoria?user=alonso-espinosa&duration=15&overlayCalendar=true" target="_blank" class="contact-item">
-          <div class="contact-icon">📅</div>
-          <div>
-            <h4>Agendar llamada</h4>
-            <p>Reserva aquí tu cita</p>
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/conchi-alonso-garcia/" target="_blank" class="contact-item">
-          <div class="contact-icon">💼</div>
-          <div>
-            <h4>LinkedIn</h4>
-            <p>linkedin.com/in/conchi-alonso-garcia</p>
-          </div>
-        </a>
-        <a href="https://github.com/alauriela" target="_blank" class="contact-item">
-          <div class="contact-icon">🐙</div>
-          <div>
-            <h4>GitHub</h4>
-            <p>github.com/alauriela</p>
-          </div>
-        </a>
-        <a href="https://www.alonsoespinosa.com/" target="_blank" class="contact-item">
-          <div class="contact-icon">🌐</div>
-          <div>
-            <h4>Empresa</h4>
-            <p>alonsoespinosa.com</p>
-          </div>
-        </a>
-      </div>
-      <div class="contact-cta fade-in">
-        <h3>¿Necesitas orden<br/>en tu operativa?</h3>
-        <p>
-          Si buscas una asistente virtual técnica y creativa que combine gestión, 
-          automatización e inteligencia artificial, estamos en el lugar correcto.
-        </p>
-        <a href="mailto:conchialonsogarcia5@gmail.com" class="btn-primary">
-          Enviar mensaje →
-        </a>
-        <br/><br/>
-        <p style="font-size:0.85rem; opacity:0.6;">Barcelona · Remoto · España</p>
-      </div>
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      © 2026 Conchi Alonso García · 
+      <a href="https://www.alonsoespinosa.com/">Alonso & Espinosa</a> · 
+      <a href="https://github.com/alauriela">GitHub</a> · 
+      <a href="https://www.linkedin.com/in/conchi-alonso-garcia/">LinkedIn</a>
+    </p>
+    <p style="margin-top:0.5rem; font-size:0.75rem; opacity:0.5;">
+      Asistente Virtual Técnica & Creativa · Barcelona · Remoto
+    </p>
+  </footer>
+
+  <!-- Back to Top -->
+  <div id="backToTop" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</div>
+
+  <!-- AI Widget -->
+  <button class="ai-widget" onclick="toggleAI()">
+    <span class="ai-icon">🤖</span>
+    <span>Asistente IA</span>
+    <div id="ai-bubble" class="ai-bubble">
+      <strong>¡Hola! Soy el asistente de Conchi.</strong><br/><br/>
+      ¿Buscas optimizar tu negocio con IA o necesitas poner orden en tu operativa?<br/><br/>
+      Conchi puede ayudarte a automatizar tareas y recuperar tu tiempo. ¡Escríbele un mensaje!
     </div>
-  </div>
-</section>
+  </button>
 
-<!-- FOOTER -->
-<footer>
-  <p>
-    © 2026 Conchi Alonso García · 
-    <a href="https://www.alonsoespinosa.com/">Alonso & Espinosa</a> · 
-    <a href="https://github.com/alauriela">GitHub</a> · 
-    <a href="https://www.linkedin.com/in/conchi-alonso-garcia/">LinkedIn</a>
-  </p>
-  <p style="margin-top:0.5rem; font-size:0.75rem; opacity:0.5;">
-    Asistente Virtual Técnica & Creativa · Barcelona · Remoto
-  </p>
-</footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
 
-<!-- Back to Top -->
-<div id="backToTop" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</div>
+    // Typed.js initialization
+    new Typed('#typed-text', {
+      strings: ['Técnica & Creativa', 'Experta en IA', 'Especialista Shopify', 'Consultora Operativa'],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true,
+      backDelay: 2000
+    });
 
-<!-- AI Widget -->
-<button class="ai-widget" onclick="toggleAI()">
-  <span class="ai-icon">🤖</span>
-  <span>Asistente IA</span>
-  <div id="ai-bubble" class="ai-bubble">
-    <strong>¡Hola! Soy el asistente de Conchi.</strong><br/><br/>
-    ¿Buscas optimizar tu negocio con IA o necesitas poner orden en tu operativa?<br/><br/>
-    Conchi puede ayudarte a automatizar tareas y recuperar tu tiempo. ¡Escríbele un mensaje!
-  </div>
-</button>
+      // AI Widget Toggle
+      function toggleAI() {
+        const bubble = document.getElementById('ai-bubble');
+        bubble.classList.toggle('active');
+      }
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  // Initialize AOS
-  AOS.init({
-    duration: 1000,
-    once: true,
-    offset: 100
-  });
+      // Copy to Clipboard function
+      function copyToClipboard(text, element) {
+        navigator.clipboard.writeText(text).then(() => {
+          const originalText = element.querySelector('p').innerText;
+          element.querySelector('p').innerText = '¡Copiado! ✅';
+          element.style.background = 'rgba(230, 57, 70, 0.1)';
+          setTimeout(() => {
+            element.querySelector('p').innerText = originalText;
+            element.style.background = '';
+          }, 2000);
+        });
+      }
 
-  // Typed.js initialization
-  new Typed('#typed-text', {
-    strings: ['Técnica & Creativa', 'Experta en IA', 'Especialista Shopify', 'Consultora Operativa'],
-    typeSpeed: 60,
-    backSpeed: 40,
-    loop: true,
-    backDelay: 2000
-  });
-
-    // AI Widget Toggle
-    function toggleAI() {
-      const bubble = document.getElementById('ai-bubble');
-      bubble.classList.toggle('active');
-    }
-
-    // Copy to Clipboard function
-    function copyToClipboard(text, element) {
-      navigator.clipboard.writeText(text).then(() => {
-        const originalText = element.querySelector('p').innerText;
-        element.querySelector('p').innerText = '¡Copiado! ✅';
-        element.style.background = 'rgba(230, 57, 70, 0.1)';
-        setTimeout(() => {
-          element.querySelector('p').innerText = originalText;
-          element.style.background = '';
-        }, 2000);
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
       });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Mobile menu toggle
+    function toggleMenu() {
+      const links = document.querySelector('.nav-links');
+      links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+      links.style.flexDirection = 'column';
+      links.style.position = 'absolute';
+      links.style.top = '64px';
+      links.style.left = '0';
+      links.style.right = '0';
+      links.style.background = 'rgba(26,26,46,0.98)';
+      links.style.padding = '1rem 2rem';
+      links.style.gap = '1rem';
     }
 
-  // Intersection Observer for fade-in animations
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1 });
+      // Back to Top visibility
+      window.addEventListener('scroll', () => {
+        const btt = document.getElementById('backToTop');
+        if (window.scrollY > 500) btt.classList.add('visible');
+        else btt.classList.remove('visible');
+      });
 
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-  // Mobile menu toggle
-  function toggleMenu() {
-    const links = document.querySelector('.nav-links');
-    links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
-    links.style.flexDirection = 'column';
-    links.style.position = 'absolute';
-    links.style.top = '64px';
-    links.style.left = '0';
-    links.style.right = '0';
-    links.style.background = 'rgba(26,26,46,0.98)';
-    links.style.padding = '1rem 2rem';
-    links.style.gap = '1rem';
-  }
-
-    // Back to Top visibility
-    window.addEventListener('scroll', () => {
-      const btt = document.getElementById('backToTop');
-      if (window.scrollY > 500) btt.classList.add('visible');
-      else btt.classList.remove('visible');
+      // Active nav link on scroll
+      const sections = document.querySelectorAll('section[id]');
+      window.addEventListener('scroll', () => {
+        let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.style.color = '';
+        if (a.getAttribute('href') === '#' + current) {
+          a.style.color = 'white';
+        }
+      });
     });
-
-    // Active nav link on scroll
-    const sections = document.querySelectorAll('section[id]');
-    window.addEventListener('scroll', () => {
-      let current = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 80;
-      if (window.scrollY >= sectionTop) {
-        current = section.getAttribute('id');
-      }
-    });
-    document.querySelectorAll('.nav-links a').forEach(a => {
-      a.style.color = '';
-      if (a.getAttribute('href') === '#' + current) {
-        a.style.color = 'white';
-      }
-    });
-  });
-</script>
+  </script>
 </body>
 </html>
