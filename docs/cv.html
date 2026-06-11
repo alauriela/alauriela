@@ -1,274 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Conchi Alonso · CV Premium</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <style>
-        @page {
-            size: A4;
-            margin: 0;
-        }
-        :root {
-            --primary: #0f172a;
-            --accent: #f43f5e;
-            --accent2: #38bdf8;
-            --text: #1e293b;
-            --muted: #64748b;
-            --white: #ffffff;
-            --bg: #f8fafc;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: var(--text);
-            background: var(--white);
-            -webkit-print-color-adjust: exact;
-        }
-        .container {
-            display: flex;
-            width: 210mm;
-            height: 297mm;
-        }
-        /* Sidebar */
-        .sidebar {
-            width: 32%;
-            background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
-            color: var(--white);
-            padding: 40px 25px;
-            display: flex;
-            flex-direction: column;
-            border-right: 1px solid rgba(255,255,255,0.05);
-        }
-        .avatar-container {
-            width: 160px;
-            height: 160px;
-            margin: 0 auto 30px;
-            border-radius: 50%;
-            border: 4px solid var(--accent);
-            overflow: hidden;
-            position: relative;
-        }
-        .avatar-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center 65%; /* Ajustado para centrar la cara verticalmente */
-            transform: scale(1.8); /* Zoom para destacar el rostro */
-        }
-        .sidebar-section {
-            margin-bottom: 35px;
-        }
-        .sidebar-title {
-            font-size: 14px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--accent2);
-            margin-bottom: 15px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            padding-bottom: 5px;
-        }
-        .contact-link {
-            display: block;
-            color: rgba(255,255,255,0.8);
-            text-decoration: none;
-            font-size: 12px;
-            margin-bottom: 12px;
-            word-break: break-all;
-        }
-        .skill-tag {
-            display: inline-block;
-            background: rgba(255,255,255,0.1);
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 11px;
-            margin: 0 4px 8px 0;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        /* Main Content */
-        .main {
-            width: 68%;
-            padding: 50px 40px;
-            background: var(--white);
-        }
-        .header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 42px;
-            color: var(--primary);
-            margin: 0 0 5px 0;
-        }
-        .header h2 {
-            font-size: 18px;
-            color: var(--accent);
-            font-weight: 600;
-            margin: 0 0 30px 0;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .section {
-            margin-bottom: 35px;
-        }
-        .section-header {
-            font-size: 16px;
-            font-weight: 800;
-            color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-        }
-        .section-header::after {
-            content: '';
-            flex: 1;
-            height: 2px;
-            background: linear-gradient(90deg, var(--accent-soft), transparent);
-            margin-left: 15px;
-        }
-        .profile-text {
-            font-size: 13px;
-            line-height: 1.7;
-            color: var(--text);
-            text-align: justify;
-        }
-        .exp-item {
-            margin-bottom: 20px;
-        }
-        .exp-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 5px;
-        }
-        .exp-title {
-            font-size: 14px;
-            font-weight: 700;
-            color: var(--primary);
-        }
-        .exp-date {
-            font-size: 11px;
-            font-weight: 600;
-            color: var(--accent);
-        }
-        .exp-company {
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--accent2);
-            margin-bottom: 8px;
-        }
-        .exp-desc {
-            font-size: 12px;
-            line-height: 1.6;
-            color: var(--muted);
-        }
-        .cert-item {
-            font-size: 12px;
-            margin-bottom: 8px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .cert-name { font-weight: 600; color: var(--primary); }
-        .cert-org { color: var(--muted); }
-    </style>
+<meta charset="UTF-8" />
+<title>Conchi Alonso · CV Operaciones Digitales</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --primary:#0f172a;
+  --primary2:#1e293b;
+  --gold:#d6b56d;
+  --gold-soft:rgba(214,181,109,.16);
+  --accent:#f43f5e;
+  --accent2:#38bdf8;
+  --paper:#f6f2ea;
+  --card:#fffaf1;
+  --text:#1e293b;
+  --muted:#64748b;
+  --white:#ffffff;
+  --line:rgba(214,181,109,.45);
+}
+*{box-sizing:border-box}
+body{font-family:'Inter',sans-serif;margin:0;padding:0;color:var(--text);background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+.container{display:flex;width:210mm;height:297mm;background:var(--paper);overflow:hidden;}
+.sidebar{width:33%;background:linear-gradient(180deg,#07111f 0%,#0f172a 52%,#172033 100%);color:var(--white);padding:26px 22px 22px;display:flex;flex-direction:column;position:relative;}
+.sidebar:before{content:"CA";position:absolute;top:18px;right:18px;font-family:'Playfair Display',serif;font-size:46px;line-height:1;color:rgba(214,181,109,.08);letter-spacing:-3px;}
+.avatar-container{width:118px;height:118px;margin:6px auto 20px;border-radius:50%;border:3px solid var(--gold);overflow:hidden;background:#0f172a;box-shadow:0 0 0 7px rgba(214,181,109,.08);position:relative;z-index:1;}
+.avatar-img{width:100%;height:100%;object-fit:cover;object-position:center 45%;transform:scale(1.22);}
+.sidebar-section{margin-bottom:21px;position:relative;z-index:1;}
+.sidebar-title{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2.8px;color:var(--gold);margin-bottom:12px;border-bottom:1px solid rgba(214,181,109,.28);padding-bottom:6px;}
+.contact-link{display:block;color:rgba(255,255,255,.82);text-decoration:none;font-size:10.6px;margin-bottom:10px;word-break:break-word;line-height:1.35;}
+.skill-list{display:grid;grid-template-columns:1fr;gap:6px;}
+.skill-tag{display:block;background:rgba(255,255,255,.075);padding:5px 8px;border-radius:999px;font-size:10.1px;margin:0;border:1px solid rgba(214,181,109,.18);color:rgba(255,255,255,.88);line-height:1.2;}
+.side-text{font-size:10.25px;line-height:1.42;color:rgba(255,255,255,.84);}
+.side-text strong{color:#fff;font-weight:700;}
+.side-note{margin-top:auto;font-size:10.2px;line-height:1.45;color:rgba(255,255,255,.68);border-top:1px solid rgba(214,181,109,.22);padding-top:14px;position:relative;z-index:1;}
+.main{width:67%;padding:34px 34px 30px;background:linear-gradient(180deg,#fffaf1 0%,#f8fafc 100%);}
+.header{border-bottom:2px solid var(--line);padding-bottom:18px;margin-bottom:22px;position:relative;}
+.header:after{content:"";position:absolute;right:0;bottom:-2px;width:105px;height:2px;background:var(--accent);}
+.header h1{font-family:'Playfair Display',serif;font-size:41px;color:var(--primary);margin:0 0 6px;letter-spacing:-.5px;}
+.header h2{font-size:15px;color:var(--primary);font-weight:800;margin:0;text-transform:uppercase;letter-spacing:1.3px;line-height:1.32;}
+.tagline{display:inline-block;margin-top:11px;padding:6px 12px;border-radius:999px;background:var(--gold-soft);color:#765a1e;border:1px solid rgba(214,181,109,.35);font-size:11px;font-weight:700;letter-spacing:.2px;}
+.section{margin-bottom:21px;}
+.section-header{font-size:13px;font-weight:800;color:var(--primary);text-transform:uppercase;letter-spacing:1.3px;margin-bottom:12px;display:flex;align-items:center;}
+.section-header:after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent);margin-left:12px;}
+.profile-text{font-size:11.7px;line-height:1.62;color:#334155;text-align:left;margin:0;}
+.exp-item{margin-bottom:13px;}
+.exp-header{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:3px;}
+.exp-title{font-size:12.4px;font-weight:800;color:var(--primary);line-height:1.25;}
+.exp-date{font-size:10px;font-weight:800;color:#a16207;white-space:nowrap;text-transform:uppercase;}
+.exp-company{font-size:10.7px;font-weight:700;color:#0284c7;margin-bottom:5px;}
+.exp-desc{font-size:10.8px;line-height:1.52;color:var(--muted);margin:0;}
+.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px 14px;}
+.project{background:rgba(255,255,255,.48);border-left:3px solid var(--gold);padding:8px 10px;border-radius:10px;}
+.project .exp-title{font-size:11.5px;margin-bottom:4px;}
+.project .exp-desc{font-size:10.2px;line-height:1.42;}
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <div class="avatar-container">
-                <img src="./foto-conchi.png" class="avatar-img" alt="Conchi Alonso">
-            </div>
-            
-            <div class="sidebar-section">
-                <div class="sidebar-title">Contacto</div>
-                <div class="contact-link">✉️ conchialonsogarcia5@gmail.com</div>
-                <div class="contact-link">📅 cal.eu/alonso-espinosa</div>
-                <div class="contact-link">💼 linkedin.com/in/conchi-alonso-garcia</div>
-                <div class="contact-link">🌐 alauriela.github.io/alauriela</div>
-            </div>
-
-            <div class="sidebar-section">
-                <div class="sidebar-title">Habilidades</div>
-                <span class="skill-tag">IA & Automatización</span>
-                <span class="skill-tag">Shopify Expert</span>
-                <span class="skill-tag">Zapier / Make</span>
-                <span class="skill-tag">Gestión Operativa</span>
-                <span class="skill-tag">Ciberseguridad</span>
-                <span class="skill-tag">Google Workspace</span>
-                <span class="skill-tag">SOPs & Procesos</span>
-                <span class="skill-tag">ElevenLabs IA</span>
-            </div>
-
-            <div class="sidebar-section">
-                <div class="sidebar-title">Formación</div>
-                <div style="font-size: 11px; line-height: 1.6;">
-                    <strong>Consultora de IA</strong><br/>IQS Executive (2026)<br/><br/>
-                    <strong>Ciberseguridad</strong><br/>Google / Coursera (2025)<br/><br/>
-                    <strong>Marketing Digital</strong><br/>Google / Coursera (2025)<br/><br/>
-                    <strong>Shopify Specialist</strong><br/>Formación Técnica (2024)
-                </div>
-            </div>
-        </div>
-
-        <div class="main">
-            <div class="header">
-                <h1>Conchi Alonso</h1>
-                <h2>Asistente Virtual Técnica & Creativa</h2>
-            </div>
-
-            <div class="section">
-                <div class="section-header">Perfil Profesional</div>
-                <p class="profile-text">
-                    Profesional híbrida con más de 20 años de experiencia en gestión operativa y una sólida especialización en Inteligencia Artificial y automatización. Mi enfoque combina la eficiencia técnica con la visión estratégica para transformar el caos administrativo en sistemas escalables. Experta en implementar soluciones de IA que optimizan el tiempo y los recursos de pymes y emprendedores.
-                </p>
-            </div>
-
-            <div class="section">
-                <div class="section-header">Experiencia Clave</div>
-                
-                <div class="exp-item">
-                    <div class="exp-header">
-                        <span class="exp-title">Asistente Virtual & Digital Support</span>
-                        <span class="exp-date">2025 - Actualidad</span>
-                    </div>
-                    <div class="exp-company">Freelance</div>
-                    <p class="exp-desc">Especializada en la implementación de agentes de IA, automatización de flujos de trabajo y gestión técnica de e-commerce (Shopify).</p>
-                </div>
-
-                <div class="exp-item">
-                    <div class="exp-header">
-                        <span class="exp-title">Socia Fundadora</span>
-                        <span class="exp-date">2025 - Actualidad</span>
-                    </div>
-                    <div class="exp-company">Alonso & Espinosa</div>
-                    <p class="exp-desc">Consultoría operativa para pymes. Sistematización de procesos internos para mejorar la rentabilidad y el orden empresarial.</p>
-                </div>
-
-                <div class="exp-item">
-                    <div class="exp-header">
-                        <span class="exp-title">Responsable de Operaciones</span>
-                        <span class="exp-date">1995 - 2016</span>
-                    </div>
-                    <div class="exp-company">Sector Hostelería</div>
-                    <p class="exp-desc">Liderazgo de equipos y gestión integral de negocios con alta carga operativa, optimizando la logística y el servicio al cliente.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="section-header">Proyectos de Impacto</div>
-                
-                <div class="exp-item">
-                    <div class="exp-title">EcoLuz Doméstica · IA Audiovisual</div>
-                    <p class="exp-desc">Creación de contenido educativo mediante avatares de IA y clonación de voz para formación técnica, mejorando el engagement del usuario.</p>
-                </div>
-
-                <div class="exp-item">
-                    <div class="exp-title">Sistematización Operativa</div>
-                    <p class="exp-desc">Reducción del 40% en tiempos administrativos mediante la creación de SOPs y automatizaciones personalizadas con Make.com.</p>
-                </div>
-            </div>
-        </div>
+<div class="container">
+  <aside class="sidebar">
+    <div class="avatar-container"><img src="./foto-conchi.png" class="avatar-img" alt="Conchi Alonso"></div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">Contacto</div>
+      <div class="contact-link">✉️ conchialonsogarcia5@gmail.com</div>
+      <div class="contact-link">📅 cal.eu/alonso-espinosa</div>
+      <div class="contact-link">💼 linkedin.com/in/conchi-alonso-garcia</div>
+      <div class="contact-link">🌐 alauriela.github.io/alauriela</div>
     </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">Áreas clave</div>
+      <div class="skill-list">
+      <span class="skill-tag">Operaciones digitales</span>
+      <span class="skill-tag">IA aplicada</span>
+      <span class="skill-tag">Automatización útil</span>
+      <span class="skill-tag">Procesos y SOPs</span>
+      <span class="skill-tag">Gestión documental</span>
+      <span class="skill-tag">Google Workspace</span>
+      <span class="skill-tag">Make / Zapier</span>
+      <span class="skill-tag">Seguridad digital</span>
+      <span class="skill-tag">Soporte IT</span>
+      <span class="skill-tag">Shopify</span>
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">Formación</div>
+      <div class="side-text">
+        <strong>Consultora de IA</strong><br>IQS Executive · 2026<br><br>
+        <strong>Asistente Virtual Pro</strong><br>Mamis Digitales · 2025<br><br>
+        <strong>Marketing Digital & E-commerce</strong><br>Google / Coursera · 2025<br><br>
+        <strong>Soporte de TI Profesional</strong><br>Google / Coursera · 2022<br><br>
+        <strong>Ciberseguridad</strong><br>Google / Coursera · en curso · curso 5
+      </div>
+    </div>
+    <div class="side-note">Barcelona · Remoto · España<br><strong>Primero proceso.</strong><br>Tecnología solo si aporta.</div>
+  </aside>
+  <main class="main">
+    <header class="header">
+      <h1>Conchi Alonso</h1>
+      <h2>Operaciones Digitales · IA Aplicada</h2>
+      <div class="tagline">Procesos · Automatización · Organización</div>
+    </header>
+    <section class="section">
+      <div class="section-header">Perfil profesional</div>
+      <p class="profile-text">Profesional de operaciones digitales con más de 20 años de experiencia en gestión operativa, coordinación de equipos, atención al cliente y organización de procesos. Combino criterio operativo, IA aplicada y automatización para ayudar a pymes a reducir fricciones, ordenar sistemas de trabajo y ganar claridad en su día a día. Mi enfoque parte siempre del proceso: entender cómo funciona el negocio, detectar bloqueos y aplicar tecnología solo cuando aporta valor real.</p>
+    </section>
+    <section class="section">
+      <div class="section-header">Experiencia clave</div>
+      <div class="exp-item"><div class="exp-header"><span class="exp-title">Soporte Operativo Digital & Asistencia Virtual</span><span class="exp-date">2025 - Actualidad</span></div><div class="exp-company">Freelance · Remoto</div><p class="exp-desc">Soporte operativo para pymes y emprendedores: organización de tareas, gestión de correo y agenda, documentación, automatización de flujos y mejora de herramientas digitales.</p></div>
+      <div class="exp-item"><div class="exp-header"><span class="exp-title">Socia Fundadora · Consultoría Operativa</span><span class="exp-date">2025 - Actualidad</span></div><div class="exp-company">Alonso & Espinosa</div><p class="exp-desc">Diagnóstico de fricciones operativas, sistematización de procesos internos, diseño de SOPs y aplicación de soluciones digitales prácticas para pymes con alta carga operativa.</p></div>
+      <div class="exp-item"><div class="exp-header"><span class="exp-title">Responsable de Operaciones y Equipos</span><span class="exp-date">1995 - 2016</span></div><div class="exp-company">Sector Hostelería</div><p class="exp-desc">Gestión integral de negocio, coordinación de equipos, resolución de incidencias en tiempo real, atención al cliente de alto volumen, control de stock, facturación y proveedores.</p></div>
+    </section>
+    <section class="section">
+      <div class="section-header">Proyectos de impacto</div>
+      <div class="project-grid">
+        <div class="project"><div class="exp-title">Metodología M.A.G.I.A.</div><p class="exp-desc">Diagnóstico, arquitectura de sistemas, gestión del cambio, implementación ágil y auditoría de resultados para aplicar IA con criterio.</p></div>
+        <div class="project"><div class="exp-title">Sistematización operativa</div><p class="exp-desc">Creación de SOPs, estructura documental y automatizaciones con Make/Zapier para reducir tiempos administrativos y errores.</p></div>
+        <div class="project"><div class="exp-title">EcoLuz Doméstica · IA</div><p class="exp-desc">Contenido educativo con avatares, voz IA y edición audiovisual para comunicar soluciones técnicas de forma clara.</p></div>
+        <div class="project"><div class="exp-title">Asistentes Virtuales en Acción</div><p class="exp-desc">Guías, procesos, criterios de moderación, documentación interna y contenidos para una comunidad profesional.</p></div>
+      </div>
+    </section>
+  </main>
+</div>
 </body>
 </html>
