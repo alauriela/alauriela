@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://alauriela.github.io/alauriela/sitemap.xml
